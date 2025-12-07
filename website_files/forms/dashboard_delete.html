@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> The Item and Ticket Submit form </title>
+        <!-- Style -->
+        <style>
+        	h2 {
+        	  font-size: 35px;
+        	}
+        	table, th, td{
+        	  text-align: center;
+        	  margin: auto;
+        	  border: 0.5px solid;
+        	}
+        	th {
+        	  background-color: black;
+        	  color: white;
+        	  padding: 24px;
+        	}
+        	td {
+        	  background-color: #777;
+        	  color: white;
+        	  padding: 16px;
+        	}
+        	.formathead {
+        	  color: orange;
+        	  font-weight: bold;
+        	  text-align: left;
+        	  display: flex;
+        	  margin: 0 20px;
+        	  padding: 0 20px;
+        	  font-size: 25px;
+        	}
+    	</style>
+    </head>
+    
+    <body>
+        <h3> Ticket and Item Submit Page </h3>
+        <!-- Upper Section -->
+        <div class="formathead">
+            <div> User Database </div>
+            <div class="formathead"> Tickets </div>
+            <!-- Image -->
+            <div class="formathead"> 
+                <img class="designborder" src="icons/pngwing.com(2).png" alt="border" width="100" height="100"> 
+            </div>
+        </div>
+        <!-- Delete Data -->
+        <div>
+            <div>
+				<h4> Erase one ticket </h4>
+				<form action="ticket_delete.php" method="post">
+                    <!-- scrolling select -->
+                    <select name="ticketdelete" id="ticketdelete">>
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                        <option value="5"> 5 </option>
+                        <option value="6"> 6 </option>
+                        <option value="7"> 7 </option>
+                        <option value="8"> 8 </option>
+                        <option value="9"> 9 </option>
+                        <option value="10"> 10 </option>
+                    </select>
+
+					<!-- Visually separates content (the invisible wall/barrier) -->
+					<hr>
+
+					<!-- Submit button -->
+					<button type="submit" value="Delete"> Delete </button>
+				</form>>
+            </div>
+        </div>
+    </body>
+</html>

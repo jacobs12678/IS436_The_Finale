@@ -66,18 +66,22 @@
 					echo "<table>";
 					echo "<thead>
 						<tr>
+							<th> # </th>
 							<th> Confirmations </th>
 							<th> Type </th>
 							<th> Submitted Date </th>
 						</tr>
 					</thead><tbody>";
 
+					$i = 1;
 					while ($row = mysqli_fetch_assoc($result)) {
 						echo "<tr>
+							<td>" . htmlspecialchars($row['t_id']). "</td>
 							<td>" . htmlspecialchars($row['confirmation']). "</td>
 							<td>" . htmlspecialchars($row['ticket_type']). "</td>
 							<td>" . htmlspecialchars($row['submitted']). "</td>
 						</tr>";
+						$i++;
 					}
 
 					echo "</tbody></table></div>";
@@ -93,7 +97,13 @@
 
 		<div>
 			<div>
-				<a href ="dashboard.html"> New Item and Ticket </a>
+				<a href ="dashboard.html"> Add a Ticket </a>
+			</div>
+		</div>
+
+		<div>
+			<div>
+				<a href ="dashboard_delete.html"> Delete a Ticket</a>
 			</div>
 		</div>
 
