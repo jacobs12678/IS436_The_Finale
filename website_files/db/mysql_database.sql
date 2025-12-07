@@ -115,3 +115,4 @@ INSERT INTO searchdisplay (sd_id, sl_id_FK, ls_id_FK, keyword) VALUES
 
 ALTER TABLE searchdisplay MODIFY sd_id int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 3;
 /*----------------------------------------------------------------------------------------------*/
+COMMIT;
