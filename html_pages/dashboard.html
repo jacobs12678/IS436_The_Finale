@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> The Admin Dashboard </title>
+
+	<style>
+
+	h2 {
+	  font-size: 35px;
+	}
+
+	table, th td{
+	  text-align: center;
+	  margin: auto;
+	  border: 0.5px solid;
+	}
+
+	th {
+	  background-color: black;
+	  color: white;
+	  padding: 24px;
+	}
+
+	td {
+	  background-color: #777;
+	  color: white;
+	  padding: 16px;
+	}
+
+	.formathead {
+	  color: orange;
+	  font-weight: bold;
+	  text-align: left;
+	  display: flex;
+	  margin: 0 20px;
+	  padding: 0 20px;
+	  font-size: 25px;
+	}
+
+	</style>
+  </head>
+
+  <body>
+
+    <!-- The title! -->
+    <h1> Admin Dashboard </h1>
+    <!-- Section of details -->
+    <div class="formathead">
+        <div> User Database </div>
+        <div class="formathead"> Tickets </div>
+    </div>
+    
+    <!-- The database content -->
+    <h2> Tickets Log </h2>
+    <!-- The Dashboard -->
+    <div>
+        <div>
+            <!-- Data Headers -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Confirmations
+                        </th>
+                        <th>
+                            Type
+                        </th>
+                        <th>
+                            Date of Submitted
+                        </th>
+                    </tr>
+                </thead>
+
+                <!-- Data Content -->
+                <tbody>
+                    <tr>
+                        <td> Confirmed </td>
+                        <td> Service Request </td>
+                        <td> 12/17/2025 10:15:00 </td>
+                    </tr>
+                    <tr>
+                        <td> Cancelled </td>
+                        <td> Technical Support </td>
+                        <td> 11/27/2025 11:34:25 </td>
+                    </tr>
+                    <tr>
+                        <td> Confirmed </td>
+                        <td> Billing and Payment </td>
+                        <td> 12/01/2025 09:45:36 </td>
+                    </tr>
+                    <tr>
+                        <td> Cancelled </td>
+                        <td> Service Request </td>
+                        <td> 11/30/2025 23:24:12 </td>
+                    </tr>
+                    <tr>
+                        <td> Pending </td>
+                        <td> Technical Support </td>
+                        <td> 10/08/2025 20:15:25 </td>
+                    </tr>
+                    <tr>
+                        <td> Cancelled </td>
+                        <td> Technical Support </td>
+                        <td> 06/08/2025 18:36:30 </td>
+                    </tr>
+                    <tr>
+                        <td> Confirmed </td>
+                        <td> Service Request </td>
+                        <td> 09/16/2025 21:25:45 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
