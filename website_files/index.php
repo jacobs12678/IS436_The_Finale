@@ -35,7 +35,7 @@
     
     <body>
         <!-- The Homepage Title with Other Sections -->
-		<h1 class="color"> WELCOME TO THE LOST & FOUND </h1>
+		<h1> WELCOME TO THE LOST & FOUND </h1>
 		<p> A place for UMBC members to report and find their missing belongings in a time of crisis.</p>
 
 		<!-- Image -->
