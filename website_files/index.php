@@ -42,24 +42,27 @@
 
 		<!-- Image -->
 		 <img src="pngwing.com(1).png" alt="main picture" width="500" height="300">
-		<!-- Report Link Click (Leave a report), Search Link Click (Search or browse), Find Link Click (Recently checked in) -->
+		<!-- The 4 Links -->
 		 <div>
 			<div>
-				<p> Report </p>
-				<!-- insert Report image here! -->
+				<table>
+					<thead>
+						<tr>
+							<th> Report </th>
+							<!-- image -->
+				            <img src="report_icon.jpg" alt="report" width="150" height="150">
+							<th> Search </th>
+							<!-- image -->
+							<img src="search_icon.jpg" alt="search" width="150" height="150">
+							<th> Find </th>
+							<!-- image -->
+							<img src="lost_item_icon.png" alt="lostitem" width="150" height="150">
+							<th> <a href="forms/admin_dashboard.html" class="formathead"> Tickets </a></th>
+							<!-- Ticket image -->
+						</tr>
+					</thead>
+				</table>
 		    </div>
-			<div>
-				<p> Search </p>
-				<!-- insert Search image here! -->
-			</div>
-			<div>
-				<p> Find </p>
-				<!-- insert Search image here! -->
-			</div>
-			<div>
-				<a href="forms/admin_dashboard.html" class="formathead"> Tickets </a>
-			</div>
-
 		 </div>
     </body>
 </html>
