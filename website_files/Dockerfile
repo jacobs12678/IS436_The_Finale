@@ -10,6 +10,9 @@ RUN apt-get update && apt-get install -y \
 # Enable Apache mod_rewrite (optional but useful for PHP apps)
 RUN a2enmod rewrite
 
+# Keep This (Very Important)
+RUN echo "AddType application/x-httpd-php .html" >> /etc/apache2/apache2.conf
+
 # Copy your source code
 COPY . /var/www/html
 
