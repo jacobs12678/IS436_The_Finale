@@ -1,13 +1,13 @@
 
 services:
   db:
-    container_name: lamp-db
+    container_name: project-db
     image: mysql:latest
     environment:
-      MYSQL_DATABASE: lamp_demo
-      MYSQL_USER: lamp_demo
-      MYSQL_PASSWORD: password
-      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: main_project_db
+      MYSQL_USER: UMBCstudent
+      MYSQL_PASSWORD: bongocat123
+      MYSQL_ROOT_PASSWORD: bongocat123
     volumes:
       - "./db:/docker-entrypoint-initdb.d"
     networks:
@@ -21,7 +21,7 @@ services:
       retries: 5
 
   www:
-    container_name: lamp-www
+    container_name: project-www
     build:
       context: .
       dockerfile: Dockerfile
@@ -36,21 +36,6 @@ services:
       - "443:443"
     networks:
       - lamp-docker
-
-  phpmyadmin:
-    container_name: lamp-phpmyadmin
-    depends_on:
-      db:
-        condition: service_healthy
-    image: phpmyadmin/phpmyadmin:latest
-    ports:
-      - "8001:80"
-    environment:
-      PMA_HOST: db
-      PMA_PORT: 3306
-    networks:  
-      - lamp-docker
-
 networks:
   lamp-docker:
     driver: bridge
