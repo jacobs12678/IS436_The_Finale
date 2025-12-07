@@ -1,6 +1,8 @@
         	h2 {
         	  font-size: 35px;
 			  text-align: center;
+			  color: orange;
+			  font-weight: bold;
         	}
         	table, th, td{
         	  text-align: center;
