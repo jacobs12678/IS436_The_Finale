@@ -43,7 +43,7 @@
 		<!-- Report Link Click (Leave a report), Search Link Click (Search or browse), Find Link Click (Recently checked in) -->
 		 <div>
 			<div>
-				<a href="forms/admin_dashboard.html" class="formathead"> Report </a>
+				<p> Report </p>
 				<!-- insert Report image here! -->
 		    </div>
 			<div>
@@ -54,10 +54,11 @@
 				<p> Find </p>
 				<!-- insert Search image here! -->
 			</div>
+			<div>
+				<a href="forms/admin_dashboard.html" class="formathead"> Tickets </a>
+			</div>
+
 		 </div>
-		<!-- About the WALL-Es (The team) -->
-
-
     </body>
 </html>
 

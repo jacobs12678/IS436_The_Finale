@@ -13,16 +13,16 @@
 				<h4> Insert the Ticket: </h4>
 				<form action="ticket_submit.php" method="post">
 					<div>
-						<label> Confirmation </label>
+						<label> Confirmation (Confirmed, Pending, or Cancelled) </label>
 						<input type="text" id="confirmation" name="confirmation">
 					</div>
 					<div>
-						<label> Ticket Type </label>
+						<label> Ticket Type (Technical Support, Service Request, or Billing and Payment) </label>
 						<input type="text" id="tickettype" name="tickettype">
 					</div>
 					<div>
 						<label> Date Submitted </label>
-						<input type="date" id="submitdate" name="submitdate">
+						<input type="datetime-local" id="submitdate" name="submitdate">
 					</div>
 
 					<!-- Visually separates content (the invisible wall/barrier) -->
