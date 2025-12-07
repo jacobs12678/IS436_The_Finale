@@ -23,6 +23,9 @@
         	  padding: 0 20px;
         	  font-size: 25px;
         	}
+			.centered {
+				text-align: center;
+			}
     	</style>
     </head>
     
@@ -32,18 +35,18 @@
 		<p> A place for UMBC members to report and find their missing belongings in a time of crisis.</p>
 
 		<!-- Image -->
-		 <img src="pngwing.com(1).png" alt="main picture" width="500" height="300">
+		<p class="centered"> <img src="pngwing.com(1).png" alt="main picture" width="500" height="300"> </p>
 		<!-- The 4 Links -->
 		 <div>
 			<div>
 				<table>
 					<thead>
 						<tr>
-							<th> Report <img src="report_icon.jpg" alt="report" width="150" height="150"> </th>
+							<th class="formathead"> Report <img src="report_icon.jpg" alt="report" width="150" height="150"> </th>
 				            
-							<th> Search <img src="search_icon.png" alt="search" width="160" height="160"> </th>
+							<th class="formathead"> Search <img src="search_icon.png" alt="search" width="160" height="160"> </th>
 						
-							<th> Find <img src="lost_item_icon.png" alt="lostitem" width="170" height="170"> </th>
+							<th class="formathead"> Find <img src="lost_item_icon.png" alt="lostitem" width="170" height="170"> </th>
 							<!-- Ticket needs an image -->
 							<th> <a href="forms/admin_dashboard.html" class="formathead"> Tickets </a></th>
 						</tr>
