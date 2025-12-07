@@ -1,5 +1,6 @@
 <?php
-$servername = ""; // Service name of the MySQL container in docker-compose
+// COMPLETE NO CHANGE!
+$servername = "db"; // Same name from docker-compose.yml here! (DON'T CHANGE!!!)
 $username = "UMBCstudent";
 $password = "bongocat123";
 $database = "main_project_db";
