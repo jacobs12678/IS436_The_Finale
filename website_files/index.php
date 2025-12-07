@@ -40,6 +40,8 @@
 		<h1> WELCOME TO THE LOST & FOUND </h1>
 		<p> A place for UMBC members to report and find their missing belongings in a time of crisis.</p>
 
+		<!-- Image -->
+		 <img src="pngwing.com(1).png" alt="main picture" width="500" height="300">
 		<!-- Report Link Click (Leave a report), Search Link Click (Search or browse), Find Link Click (Recently checked in) -->
 		 <div>
 			<div>
