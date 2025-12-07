@@ -10,18 +10,10 @@
         	}
         	table, th, td{
         	  text-align: center;
-        	  margin: auto;
         	  border: 0.5px solid;
-        	}
-        	th {
-        	  background-color: black;
-        	  color: white;
-        	  padding: 24px;
-        	}
-        	td {
-        	  background-color: #777;
-        	  color: white;
-        	  padding: 16px;
+			  padding: 0 24px;
+			  margin: 0 24px;
+			  font-size: 20px;
         	}
         	.formathead {
         	  color: orange;
