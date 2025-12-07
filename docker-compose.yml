@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  app:
+    image: postgres
+    environment:
+      POSTGRES_HOST: dpg-d4pq29u3jp1c7395aj80-a
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: umbcstudent
+      POSTGRES_PASSWORD: TYYpZ2xqXAXPQJQ1Ps93VsmA2H8GYRlv
+      POSTGRES_DB: project-finale
+    depends_on:
+       - db
