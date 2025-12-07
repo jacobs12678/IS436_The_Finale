@@ -66,14 +66,13 @@
 					echo "<table>";
 					echo "<thead>
 						<tr>
-							<th> # </th>
+							<th> ID </th>
 							<th> Confirmations </th>
 							<th> Type </th>
 							<th> Submitted Date </th>
 						</tr>
 					</thead><tbody>";
 
-					$i = 1;
 					while ($row = mysqli_fetch_assoc($result)) {
 						echo "<tr>
 							<td>" . htmlspecialchars($row['t_id']). "</td>
@@ -81,7 +80,6 @@
 							<td>" . htmlspecialchars($row['ticket_type']). "</td>
 							<td>" . htmlspecialchars($row['submitted']). "</td>
 						</tr>";
-						$i++;
 					}
 
 					echo "</tbody></table></div>";

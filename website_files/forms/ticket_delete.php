@@ -9,7 +9,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Inserting data into database table ticket
     $stmt = $conn->prepare("DELETE FROM ticket WHERE t_id = ?");
-    $stmt->bind_param($delete, "sss","sss", "MM-DD-YYYY");
+    $stmt->bind_param("i",$delete);
     
     if($stmt->execute()) {
         echo "Data deleted successfully!";
