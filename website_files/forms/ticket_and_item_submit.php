@@ -11,7 +11,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Inserting data into database table ticket
     $stmt = $conn->prepare("INSERT INTO ticket (confirmation, ticket_type, submitted) VALUES (?, ?, ?)");
-    $stmt->bind_param("sss", $title, $blogcontent, $submit_date);
+    $stmt->bind_param("sss", $confirm, $t_type, $submit_date);
     
     if($stmt->execute()) {
         echo "Data inserted successfully!";
