@@ -10,7 +10,6 @@
         	}
         	table, th, td{
         	  text-align: center;
-        	  border: 0.5px solid;
 			  padding: 0 24px;
 			  margin: 0 24px;
 			  font-size: 20px;
@@ -40,17 +39,13 @@
 				<table>
 					<thead>
 						<tr>
-							<th> Report </th>
-							<!-- image -->
-				            <img src="report_icon.jpg" alt="report" width="150" height="150">
-							<th> Search </th>
-							<!-- image -->
-							<img src="search_icon.jpg" alt="search" width="150" height="150">
-							<th> Find </th>
-							<!-- image -->
-							<img src="lost_item_icon.png" alt="lostitem" width="150" height="150">
+							<th> Report <img src="report_icon.jpg" alt="report" width="150" height="150"> </th>
+				            
+							<th> Search <img src="search_icon.png" alt="search" width="160" height="160"> </th>
+						
+							<th> Find <img src="lost_item_icon.png" alt="lostitem" width="170" height="170"> </th>
+							<!-- Ticket needs an image -->
 							<th> <a href="forms/admin_dashboard.html" class="formathead"> Tickets </a></th>
-							<!-- Ticket image -->
 						</tr>
 					</thead>
 				</table>
