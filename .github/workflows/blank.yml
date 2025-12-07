@@ -18,6 +18,6 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v4
         with:
-          context: php_files/
+          context: website_files/
           push: true
           tags: jacobs12/project:${{github.run_number}}
