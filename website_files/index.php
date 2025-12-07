@@ -26,6 +26,9 @@
 			.centered {
 				text-align: center;
 			}
+			.color {
+				color: orange;
+			}
     	</style>
     </head>
     
@@ -42,13 +45,13 @@
 				<table>
 					<thead>
 						<tr>
-							<th> Report <img src="report_icon.jpg" alt="report" width="150" height="150"> </th>
+							<th class="color"> Report <img src="report_icon.jpg" alt="report" width="150" height="150"> </th>
 				            
-							<th> Search <img src="search_icon.png" alt="search" width="160" height="160"> </th>
+							<th class="color"> Search <img src="search_icon.png" alt="search" width="160" height="160"> </th>
 						
-							<th> Find <img src="lost_item_icon.png" alt="lostitem" width="170" height="170"> </th>
+							<th class="color"> Find <img src="lost_item_icon.png" alt="lostitem" width="170" height="170"> </th>
 							<!-- Ticket needs an image -->
-							<th> <a href="forms/admin_dashboard.html"> Tickets </a></th>
+							<th> <a href="forms/admin_dashboard.html" class="color"> Tickets </a></th>
 						</tr>
 					</thead>
 				</table>
