@@ -60,9 +60,9 @@ if (!isset($_SESSION["logged"])) {
                    <thead>
                        <tr>
                            <!-- The Report of Lost Item -->
-                           <th> <a href="forms/report_dashboard.html" class="color"> Report </a> <img src="report_icon.jpg" alt="report" width="150" height="150"> </th>
+                           <th> <a href="forms/report_submit_page.html" class="color"> Report </a> <img src="report_icon.jpg" alt="report" width="150" height="150"> </th>
                            <!-- The Search function -->
-                           <th class="color"> Search <img src="search_icon.png" alt="search" width="160" height="160"> </th>
+                           <th> <a href="forms/report_dashboard.html" class="color"> Search </a> <img src="search_icon.png" alt="search" width="160" height="160"> </th>
                       
                            <!-- The Tickets -->
                            <th> <a href="forms/admin_dashboard.html" class="color"> Tickets </a> <img src="lost_item_icon.png" alt="lostitem" width="170" height="170"></th>

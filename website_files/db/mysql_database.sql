@@ -8,7 +8,7 @@ Tables are created in the order shown below along with the inserted values.
 */
 /*----------------------------------------------------------------------------------------------*/
 
-/* input and delete required */
+/* input required */
 /* Submit & Log Items */
 CREATE TABLE submitlog (
 sl_id int NOT NULL AUTO_INCREMENT,
@@ -30,7 +30,7 @@ INSERT INTO submitlog (sl_id, item_name, item_location, item_type, item_desc) VA
 ALTER TABLE submitlog MODIFY sl_id int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 3;
 /*----------------------------------------------------------------------------------------------*/
 
-/* no input and delete required */
+/* no input required */
 /* Subscription Table */
 CREATE TABLE subscription (
 sub_id int NOT NULL AUTO_INCREMENT, 
@@ -48,7 +48,7 @@ INSERT INTO subscription (sub_id, sub_service, cost) VALUES
 (3, '1 Year Subscription Plan', 90);
 /*----------------------------------------------------------------------------------------------*/
 
-/* input and delete required */
+/* input required */
 /* Ticket Table */
 CREATE TABLE ticket (
 t_id int NOT NULL AUTO_INCREMENT, 
@@ -68,7 +68,7 @@ INSERT INTO ticket (t_id, confirmation, ticket_type, submitted) VALUES
 ALTER TABLE ticket MODIFY t_id int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 3;
 /*----------------------------------------------------------------------------------------------*/
 
-/* input and delete required */
+/* input required */
 /* Login & Signup Table */
 CREATE TABLE loginsign (
 ls_id int NOT NULL AUTO_INCREMENT,
@@ -94,7 +94,7 @@ INSERT INTO loginsign (ls_id, ls_t_id, ls_sub_id, user_name, username, user_pass
 ALTER TABLE loginsign MODIFY ls_id int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 3;
 /*----------------------------------------------------------------------------------------------*/
 
-/* input and delete required */
+/* input required */
 /* Search Function/Display General Item(s) */
 CREATE TABLE searchdisplay (
 sd_id int NOT NULL AUTO_INCREMENT,
