@@ -36,7 +36,7 @@
 ## Logout
 - Just logout if you wish
 - The system will destroy the cookie in the mean time
-- You will have to log back in with the username and password. On the bright side, the user can save the important keys by clicking on the remember me button at the Login webpage.
+- You will have to log back in with the correct/saved username and password
 
 ## SDLC of WALL-E Lost N Found
 - ### Planning
