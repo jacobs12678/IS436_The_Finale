@@ -8,6 +8,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     die("Connection failed: " . htmlspecialchars($conn->connect_error));
   }
 
+  if ($_POST["username"] != "" && $_POST["password"] != "") {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    echo($username);
+    echo($password);
+
+  } else {
+    echo "Login Failed. Please Try Again";
+    echo "<p><a href='login.php'>Login Page</a></p>";
+  }
+
   
 
 }
