@@ -59,21 +59,72 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+</nav>
 
   <!--Login Form-->
-  <h4>Login</h4>
-  <form id="login" method="POST">
-      <div class="mb-3">
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" placeholder="Enter your username" required>
-      </div>
+<div class="row login-box">
 
-      <div class="mb-3">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required>
-      </div>
-      <button type="submit">Login</button>
-  </form>
+    <h4>Login</h4>
+
+    <form id="login" method="POST">
+        <div class="mb-3">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <form id="signup" method="POST" action="signup.php">
+        <h5><br><br>Don't have an account? Sign up below:</h5>
+        <button type="submit">Sign Up</button>
+    </form>
+
+</div>
+
+<style>
+
+.login-box {
+    margin: 20px auto;
+    width: 400px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: gold;
+}
+
+
+.login-box input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: green;
+}
+</style>
 
 </body>
 </html>
