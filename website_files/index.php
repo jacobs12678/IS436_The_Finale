@@ -51,7 +51,7 @@ if (!isset($_SESSION["logged"])) {
            }
            .pstyle {
             color: orange;
-            font-size: 21px;
+            font-size: 22px;
            }
        </style>
    </head>
@@ -59,7 +59,7 @@ if (!isset($_SESSION["logged"])) {
    <body>
        <!-- The Homepage Title with Other Sections -->
        <h1> WELCOME TO THE WALL-E's LOST & FOUND </h1>
-       <p class="pstyle"> A place for UMBC members to report and find their missing belongings in a time of crisis. <img src="pngwing.com(3).png" alt="friends" width="150" height="120"></p>
+       <p class="pstyle"> A place for UMBC members to report and find their missing belongings in a time of crisis. <img src="pngwing.com(3).png" alt="friends" width="190" height="160"></p>
 
        <!-- barrier -->
        <p class="barrier"></p>
