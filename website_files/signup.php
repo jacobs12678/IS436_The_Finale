@@ -17,7 +17,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $insert = "INSERT INTO loginsign (ls_t_id, ls_sub_id, user_name, username, user_password, email) VALUES (1, 1, '$name', '$username', '$password', '$email')";
 
         if ($conn->query($insert) === TRUE){
-            $insert_success = "Successfull!";
+            $insert_success = "<br>Account created successfully!";
         } else {
             echo "Error: " . $insert . "<br>" . $conn->error;
         }
@@ -48,8 +48,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+</nav>
 
   <!--Sign Up Form-->
+  <div class="row signup-box">
   <h4>Create Your Account!</h4>
   <form id="signup" method="POST">
       <div class="mb-3">
@@ -75,21 +77,62 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       <button type="submit">Create</button>
   </form>
 
+<style>
+
+.signup-box {
+    margin: 20px auto;
+    width: 400px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: gold;
+}
+
+
+.signup-box input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+
+.signup-box button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-box button:hover {
+    background-color: green;
+}
+</style>
+
 </body>
 </html>
 
+<div style="text-align: center;">
 <?php
 
 if(!empty($signup_failed)) {
     echo $signup_failed;
-    echo "<p><a href='login.php'>Login In</a></p>";
+    echo "<p><a href='login.php'>Login</a></p>";
 }
 
 if (!empty($insert_success)) {
     echo $insert_success;
     echo "<br>";
     echo "Please go back to the login page!";
-    echo "<p><a href='login.php'>Login In</a></p>";
+    echo "<p><a href='login.php'>Login</a></p>";
 }
 
 ?>
+</div>
