@@ -15,8 +15,9 @@ if($_SERVER["REQUEST_METHOD"] = "POST") {
   print($username);
   print($password);
 
+  header("Location: index.php");
+  exit();
 }
-
 ?>
 
 <!doctype html>
@@ -60,22 +61,6 @@ if($_SERVER["REQUEST_METHOD"] = "POST") {
         </div>
         <button type="submit">Login</button>
     </form>
-
-    <!--Link to index.html-->
-    <script>
-        document.getElementById("login").addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-
-            if (username === "lost" && password === "lost") {
-                window.location.href = "index.html";
-            } else {
-                alert("Invalid Username or Password");
-            }
-        });
-    </script>
 
 </body>
 </html>
