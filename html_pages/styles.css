@@ -1,1 +1,102 @@
 /* stylizing sheet for html */
+
+body, h1, h2, h3, p, ul, li{
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif; /* simple font */
+  background-color: #ffffff; /* white background */
+  color: #000000; /*Black text*/
+  line-height:1.5;
+  padding: 20px;
+}
+
+/*Headings */
+h1 {
+  font-family: 'Roboto',sans-serif;
+  font-size: 36px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-family: 'Roboto',sans-serif;
+  font-size: 28px;
+  color: #000000; /* Black */
+  margin-top:20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Roboto',sans-serif;
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+/* Paragraphs */
+
+p {
+  font-size:16px;
+  margin-bottom:10px;
+}
+
+/* Tables */
+
+table {
+  border: 1px solid #000;
+}
+
+/* Links */
+a {
+  color: #FFCC00; /* UMBC gold */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  background-color: #FFCC00;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6b800; /* darker gold on hover */
+}
+
+/* Form inputs */
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+}
+
+/* Error and success messages */
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #000000;
+  background-color: #f9f9f9;
+}
