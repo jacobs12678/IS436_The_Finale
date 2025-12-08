@@ -80,6 +80,72 @@
 			</div>
 			<p class="barrier"></p>
         </div>
-	
+
+		<!-- Search Functionality and Display -->
+		<div>
+            <!-- The searched results -->
+			<div>
+				<?php
+				// Database connection
+				$connect = mysqli_connect(
+					'db',
+					'UMBCstudent',
+					'bongocat123',
+					'main_project_db'
+				);
+
+				if (!$connect) {
+					die("Database connection failed: " . mysqli_connect_error());
+				}
+
+				$query = 'SELECT * FROM submitlog';
+
+				// Checking for a search bar
+				$search = isset($_GET['search']) ? mysqli_real_escape_string($connect, $_GET['search']) : '';
+				// Including search terms if it exists for the following data in the table
+				if($search) {
+					$query .= " WHERE item_name LIKE '%$search%' OR item_desc LIKE '%$search%' OR item_location LIKE '%$search%'";
+				}
+
+				$result = mysqli_query($connect, $query);
+				if(!$result) {
+					echo "Error running query: " . mysqli_error($connect);
+				}
+				elseif (mysqli_num_rows($result) > 0){
+					echo "<div>";
+					echo "<table>";
+					echo "<thead>
+						<tr>
+							<th> Item ID </th>
+							<th> Item Name </th>
+                            <th> Item Type </th>
+                            <th> Item Description </th>
+                            <th> Date of Registry </th>
+							<th> Location Lost </th>
+						</tr>
+					</thead><tbody>";
+
+					while ($row = mysqli_fetch_assoc($result)) {
+						echo "<tr>
+							<td>" . htmlspecialchars($row['sl_id']). "</td>
+                            <td>" . htmlspecialchars($row['item_name']). "</td>
+                            <td>" . htmlspecialchars($row['item_type']). "</td>
+							<td>" . htmlspecialchars($row['item_desc']). "</td>
+							<td>" . htmlspecialchars($row['registered_item']). "</td>
+							<td>" . htmlspecialchars($row['item_location']). "</td>
+						</tr>";
+					}
+
+					echo "</tbody></table></div>";
+				}
+				else {
+					echo "No lost items are found for your search!";
+				}
+
+				mysqli_close($connect);
+			    ?>
+			</div>
+        </div>
+
     </body>
 </html>
