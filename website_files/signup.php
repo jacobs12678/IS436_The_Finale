@@ -87,6 +87,7 @@ if(!empty($signup_failed)) {
 
 if (!empty($insert_success)) {
     echo $insert_success;
+    echo "<br>";
     echo "Please go back to the login page!";
     echo "<p><a href='login.php'>Login In</a></p>";
 }
