@@ -15,6 +15,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $password = $_POST["password"];
 
         $insert = "INSERT INTO loginsign (ls_t_id, ls_sub_id, user_name, username, user_password, email) VALUES (1, 1, '$name', '$username', '$password', '$email')";
+        $duplicate = $conn->query("SELECT user_name, username, user_password, email FROM loginsign");
+
+
+       if ($duplicate->num_rows > 0) {
+           while($row = $duplicate->fetch_assoc()) {
+               if ($name == $row["user_name"] && $username == $row["username"] && $password == $row["user_password"] && $email == $row["email"]) {
+                   $copy = "Name/Username/Password/Email Already exists!";
+                   exit();
+               }
+           }
+       }
+
 
         if ($conn->query($insert) === TRUE){
             $insert_success = "<br>Account created successfully!";
@@ -132,6 +144,10 @@ if (!empty($insert_success)) {
     echo "<br>";
     echo "Please go back to the login page!";
     echo "<p><a href='login.php'>Login</a></p>";
+}
+
+if(!empty($copy)) {
+    echo $copy;
 }
 
 ?>
