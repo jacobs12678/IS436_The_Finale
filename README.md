@@ -25,7 +25,7 @@
 
 ## Search Webpage
 - Here, the user can view the data table of all lost items reported by other users.
-- TBC... (Search bar)
+- All the collected data are avaiable with the item id, name, type, description, date of registry, and location lost
 
 ## Ticket Webpage
 - After clicking on the link called Tickets, you can see the current data displayed of every user's ticket.
@@ -41,9 +41,9 @@
 ## SDLC of WALL-E Lost N Found
 - ### Planning
     - Throughout the planning phase, we have decided on creating a UMBC Lost N Found with WALL-E as our mascot
-    - We determined the cost and benefit of our applications then made a use-case for our features
-    - The use-case consisted of our login page, report for lost item, tickets to get lost item, search to see lost items, and a logout page
+    - We determined the cost and benefit analysis, feasibility analysis, a system request, and a methodology for our project
+    - Created our main GitHub that contains our project plan board
 - ### Analysis
-    - 
+    - The use-case consisted of our login page, report for lost item, tickets to get lost item, search to see lost items, and a logout page
 - ### Design
 - ### Implementation
