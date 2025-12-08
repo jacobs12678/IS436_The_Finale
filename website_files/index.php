@@ -39,6 +39,16 @@ if (!isset($_SESSION["logged"])) {
                text-weight: bold;
                color: orange;
            }
+           .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+           }
+           .barrier {
+            height: 10px;
+            background-color: black;
+           }
        </style>
    </head>
   
@@ -47,7 +57,7 @@ if (!isset($_SESSION["logged"])) {
        <h1> WELCOME TO THE WALL-E's LOST & FOUND </h1>
 
        <!-- barrier -->
-
+        <div class="barrier"></div>
        <p> A place for UMBC members to report and find their missing belongings in a time of crisis.</p>
 
 
@@ -75,5 +85,11 @@ if (!isset($_SESSION["logged"])) {
         </div>
 
         <!-- barrier -->
+        <div class="barrier"></div>
+
+        <!-- Image -->
+         <div class="center">
+            <img src="pngwing.com(3).png" alt="friends" width="250" height="250">
+         </div>
    </body>
 </html>
