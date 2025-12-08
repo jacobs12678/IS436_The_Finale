@@ -40,6 +40,39 @@
 - The system will destroy the cookie in the mean time
 - You will have to log back in with the correct/saved username and password
 ---
+
+## THANK THE CONFIGURATION
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.imgflip.com%2F4%2F85ovve.jpg&f=1&nofb=1&ipt=d9d98f0259bcefa739bced81423c247678c2ebcc6baeb24e22caf29dedeafc0b" alt="praise" width="50" height="50">
+- Part of this project would not have been possible without the help of this vital code, which helps the apache reads and sees php as an html script while it's insalling the dependencies
+---
+
+```dockerfile
+# syntax=docker/dockerfile:1
+FROM php:8.1.1-apache
+
+# Install required PHP extensions and tools
+RUN apt-get update && apt-get install -y \
+    libpng-dev \
+    && docker-php-ext-install mysqli pdo pdo_mysql \
+    && docker-php-ext-enable mysqli
+
+# Enable Apache mod_rewrite (optional but useful for PHP apps)
+RUN a2enmod rewrite
+
+# Keep This (Very Important)
+RUN echo "AddType application/x-httpd-php .html" >> /etc/apache2/apache2.conf
+
+# Copy your source code
+COPY . /var/www/html
+
+# Convert any Windows line endings to Linux line endings (prevents bash\r errors)
+RUN apt-get install -y dos2unix && \
+    find /var/www/html -type f -print0 | xargs -0 dos2unix || true
+
+WORKDIR /var/www/html
+```
+
+---
 ---
 ## SDLC of WALL-E Lost N Found
 - ### Planning
@@ -78,6 +111,6 @@
 
 ## Others
 1. [More about the team](https://docs.google.com/document/d/1RxHOfnJiuhgOo4wG1rYfx6ivO1J_gSk3vUrxZLQ7-x0/edit?usp=sharing)
-1. [Lost and Found Platform (Github)](https://github.com/charlem1/The-Wall-Es-Lost-and-Found-Platform.git)
-1. [Project Planning Board (Github)](https://github.com/users/charlem1/projects/8)
+1. [Lost and Found Platform](https://github.com/charlem1/The-Wall-Es-Lost-and-Found-Platform.git)
+1. [Project Planning Board](https://github.com/users/charlem1/projects/8)
 1. [Lost N Found Website](https://tenor.com/view/rick-roll-gif-12185260712090534766)
