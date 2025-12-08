@@ -12,8 +12,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    echo($username);
-    echo($password);
+    $valid_username = $conn->prepare(SELECT username from loginsign);
+    $valid_username->execute();
+    $result = $valid_username;
+
+    echo($result);
+
 
   } else {
     echo "Login Failed. Please Try Again";
