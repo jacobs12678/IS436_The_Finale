@@ -82,5 +82,62 @@ if (!isset($_SESSION["logged"])) {
         <!-- barrier -->
         <p class="barrier"></p>
 
+        <!-- The Subscription Plans -->
+        <div>
+            <div>
+				<div>
+					<h2> Subscription Plans </h2>
+				</div>
+            </div>
+			<div>
+				<?php
+				// Database connection
+				$connect = mysqli_connect(
+					'db',
+					'UMBCstudent',
+					'bongocat123',
+					'main_project_db'
+				);
+
+				if (!$connect) {
+					die("Database connection failed: " . mysqli_connect_error());
+				}
+
+				$query = 'SELECT * FROM subscription';
+				$result = mysqli_query($connect, $query);
+				
+				if(!$result) {
+					echo "Error running query: " . mysqli_error($connect);
+				}
+				elseif (mysqli_num_rows($result) > 0){
+					echo "<div>";
+					echo "<table style='text-align:center, margin: auto, border: 0.5px solid;'>";
+					echo "<thead>
+						<tr>
+							<th style='text-align:center, margin: auto, border: 0.5px solid, background-color: black, color: white, padding: 24px;'> Plan # </th>
+							<th style='text-align:center, margin: auto, border: 0.5px solid, background-color: black, color: white, padding: 24px;'> Services </th>
+							<th style='text-align:center, margin: auto, border: 0.5px solid, background-color: black, color: white, padding: 24px;'> Price </th>
+						</tr>
+					</thead><tbody>";
+
+					while ($row = mysqli_fetch_assoc($result)) {
+						echo "<tr>
+							<td style='text-align:center, margin: auto, border: 0.5px solid, background-color: #777, color: white, padding: 16px;'>" . htmlspecialchars($row['sub_id']). "</td>
+							<td style='text-align:center, margin: auto, border: 0.5px solid, background-color: #777, color: white, padding: 16px;'>" . htmlspecialchars($row['sub_service']). "</td>
+							<td style='text-align:center, margin: auto, border: 0.5px solid, background-color: #777, color: white, padding: 16px;'>" . htmlspecialchars($row['cost']). "</td>
+						</tr>";
+					}
+
+					echo "</tbody></table></div>";
+				}
+				else {
+					echo "No subscriptions are found!";
+				}
+
+				mysqli_close($connect);
+			    ?>
+			</div>
+        </div>
+        	  
    </body>
 </html>
