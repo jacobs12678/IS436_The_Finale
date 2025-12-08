@@ -28,7 +28,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $signup_failed = "Sign Up Failed. Please Try Again";
     }
     $conn->close();
-
 }
 
 ?>
@@ -80,3 +79,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </body>
 </html>
+
+<?php
+
+if(!empty($signup_failed)) {
+    echo $signup_failed;
+    echo "<p><a href='login.php'>Login In</a></p>";
+}
+
+?>
