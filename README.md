@@ -23,7 +23,7 @@
     - detailed scription of the item
     - and the date the item was lost
 - Afterwards, click register
-- If you would like to go back, you can click on the back button.
+- If you would like to go back, you can return to the homepage on the navbar (top of the page).
 --- 
 ## Search Webpage
 - Here, the user can view the data table of all lost items reported by other users.
