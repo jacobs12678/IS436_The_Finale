@@ -3,6 +3,7 @@
     <head>
         <title> The Item Submit Form </title>
 		<link rel="stylesheet" href="styles.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 		<style>
 		   .barrier {
             height: 45px;
@@ -10,44 +11,74 @@
            }
 		</style>
     </head>
+	<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://umbc.edu/wp-content/uploads/2022/02/umbc-primary-logo-250x58.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+      </div>
+    </div>
+  </div>
+</nav>
     
-    <body>
-        <h3 class="formathead"> Reporting Lost Item Page </h3>
+	<div class="row" style="margin-top: 10px; text-align: center;">
+        <h3 class="formathead"><br> Report Your Lost Item Below! <br><br></h3>
+		</div>
 		<p class="barrier"></p>
         <!-- Add Data -->
         <div>
-            <div>
-				<h4> Insert the necessary information about the lost item: </h4>
+            <div class="container py-4">
+
 				<form action="report_submit.php" method="post">
-					<div>
-						<label> Item name: </label>
-						<input type="text" id="nitem" name="nitem" required>
+
+					<div class="mb-3">
+						<label class="form-label" for="nitem">Item Name:</label>
+        				<input class="form-control" name="nitem" id="nitem" type="text" placeholder="Example: Airpods Case" required/>
+
 					</div>
-					<div>
-						<label> Location of lost item: </label>
-						<input type="text" id="itemloc" name="itemloc" required>
+
+				    <div class="mb-3">
+						<label class="form-label" for="itemloc">Location of Lost Item: </label>
+           				<input class="form-control" name="itemloc" id="itemloc" type="text" placeholder="Example: Commons" required>
 					</div>
-					<div>
-						<label> Item type: </label>
-						<input type="text" id="itemtype" name="itemtype" required>
+
+				    <div class="mb-3">
+						<label class="form-label" for="itemtype">Type of Item: </label>
+           				<input class="form-control" name="itemtype" id="itemtype" type="text" placeholder="Example: Electronics" required>
 					</div>
-                    	<div>
-						<label> Description of item: </label>
-						<textarea id="itemdesc" rows="4" cols="50" name="itemdesc" required></textarea>
+
+                    <div class="mb-3">
+						<label class="form-label" for="itemdesc">Description:</label>
+        				<textarea class="form-control" name="itemdesc" id="itemdesc" type="text" placeholder="Example: Star pattern on the case, some stars worn out and not visible. The case includes both airpods." style="height: 10rem;" required></textarea>
 					</div>
-                    	<div>
+
+                    <div class="mb-3">
 						<label> Insert date to register item: </label>
-						<input type="datetime-local" id="rdate" name="rdate" required>
+						<input class="form-control" type="datetime-local" name="rdate" id="rdate" required>
 					</div>
 
 					<!-- Visually separates content (the invisible wall/barrier) -->
 					<hr>
 
 					<!-- Submit button -->
-					<button type="submit"> Register </button>
+					 <div class="d-grid">
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Report Item! </button>
+					 </div>
+					
 				</form>
             </div>
         </div>
 		<p class="barrier"></p>
-    </body>
+		</div>
+
+		
+</body>
 </html>
