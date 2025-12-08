@@ -63,8 +63,8 @@
     - Finally documentated and prepare a demo for our Wall-E Lost N Found
 ---
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.0ICTWeDMHcWQT_fUotJglwHaEK%3Fpid%3DApi&f=1&ipt=f42af519a2ebf1f5d464018a5bb9b7a3862511436bd123e6248dc49be86e27cf&ipo=images" alt="bongocat123">
----
 
+---
 ## The Team
 | Names    |      Email            |       Bio                                     |
 | -------- | ----------------------| ----------------------------------------------|
