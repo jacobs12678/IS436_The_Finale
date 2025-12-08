@@ -66,11 +66,11 @@
 
 ---
 ## The Team
-| Names    |      Email            |       Bio                                     |
+| Names    |      Email            |       Favorite Subject                        |
 | -------- | ----------------------| ----------------------------------------------|
 | Jacob    |  jacobs12@umbc.edu    | ...                                           |
-| Brian    |  bpark4@umbc.edu      | Favorite Subject: I guess Information Systems |
-| Kairav   |  kroy1@umbc.edu       | Favorite subject: Information systems🙂       |
-| Ruby     |  rzheng2@umbc.edu     | Favorite subject: Coding                      |
-| Charles  |  charlem1@umbc.edu    | Favorite Subject:IS, Health discussion        |
-| Kerstyn  |  kmyers7@umbc.edu     | Favorite subject: Technology anything techy.  |
+| Brian    |  bpark4@umbc.edu      | I guess Information Systems                   |
+| Kairav   |  kroy1@umbc.edu       | Information systems🙂                         |
+| Ruby     |  rzheng2@umbc.edu     | Coding                                        |
+| Charles  |  charlem1@umbc.edu    | IS, Health discussion                         |
+| Kerstyn  |  kmyers7@umbc.edu     | Technology anything techy.                    |
