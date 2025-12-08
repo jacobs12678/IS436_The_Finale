@@ -67,7 +67,7 @@ if (!isset($_SESSION["logged"])) {
                            <!-- The Tickets -->
                            <th> <a href="forms/admin_dashboard.html" class="color"> Tickets </a> <img src="lost_item_icon.png" alt="lostitem" width="170" height="170"></th>
                            <!-- The SWEET Logout function -->
-                           <th> <a href="logout.php" class="color">Logout</a> <img src="logout.png" alt="loggingout" width="160" height="160"></th>
+                           <th> <a href="logout.php" class="color">Logout</a> <img src="logout.png" alt="loggingout" width="146" height="146"></th>
                        </tr>
                    </thead>
                </table>
