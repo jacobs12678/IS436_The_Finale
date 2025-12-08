@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $query = $conn->query("SELECT username, user_password FROM loginsing");
+    $query = $conn->query("SELECT username, user_password FROM loginsign");
 
     if ($query->num_rows > 0) {
       while($row = $query->fetch_assoc()) {
