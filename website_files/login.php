@@ -25,17 +25,14 @@ $conn = new mysqli('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
 
       }
   
-      echo "You need to sign up now";
-      echo "<p><a href='login.php'>Login Page</a></p>";
+      $signup_page = "You need to sign up now";
 
     } else {
-      echo "Nothing added to the table";
-      echo "<p><a href='login.php'>Login Page</a></p>";
+      $just_nothing = "Nothing added to the table";
     }
 
   } else {
-    echo "Login Failed. Please Try Again";
-    echo "<p><a href='login.php'>Login Page</a></p>";
+    $login_failed = "Login Failed. Please Try Again";
   }
 
 }
@@ -87,11 +84,22 @@ $conn = new mysqli('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
 </body>
 </html>
 
+<?php
 
+if(!empty($signup_page)) {
+  echo $signup_page;
+  echo "<p><a href='login.php'>Login Page</a></p>";
+}
 
+if(!empty($just_nothing)) {
+  echo $just_nothing;
+  echo "<p><a href='login.php'>Login Page</a></p>";
+}
 
-
-
-
+if(!empty($login_failed)) {
+  echo $login_failed;
+  echo "<p><a href='login.php'>Login Page</a></p>";
+}
+?>
 
 
