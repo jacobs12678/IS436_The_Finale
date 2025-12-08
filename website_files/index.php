@@ -4,8 +4,6 @@ if (!isset($_SESSION["logged"])) {
 	header('Location: login.php');
 	exit();
 }
-session_unset();
-session_destroy();
 ?>
 
 <!doctype html>
