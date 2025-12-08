@@ -1,9 +1,6 @@
 # WALL-E Lost N Found
 # User Guide Documentation 
 
-## SDLC of WALL-E Lost N Found
-- ### Planning
-
 ## Login Webpage
 - First, login to the website with the correct username and password.
 - If the user does not have a username or password, they need to sign up for a username and password
@@ -40,3 +37,13 @@
 - Just logout if you wish
 - The system will destroy the cookie in the mean time
 - You will have to log back in with the username and password. On the bright side, the user can save the important keys by clicking on the remember me button at the Login webpage.
+
+## SDLC of WALL-E Lost N Found
+- ### Planning
+    - Throughout the planning phase, we have decided on creating a UMBC Lost N Found with WALL-E as our mascot
+    - We determined the cost and benefit of our applications then made a use-case for our features
+    - The use-case consisted of our login page, report for lost item, tickets to get lost item, search to see lost items, and a logout page
+- ### Analysis
+    - 
+- ### Design
+- ### Implementation
