@@ -9,12 +9,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if ($_POST["name"] != "" && $_POST["email"] != "" && $_POST["username"] != "" && $_POST["password"] != "") {
-        $username = $_POST["name"];
+        $name = $_POST["name"];
         $email = $_POST["email"];
         $username = $_POST["username"];
         $password = $_POST["password"];
 
-        echo $username;
+        echo $name;
         echo $email;
         echo $username;
         echo $password;
