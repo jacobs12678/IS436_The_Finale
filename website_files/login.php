@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($query->num_rows > 0) {
       while($row = $query->fetch_assoc()) {
-        echo "username: " . $row["username"]. " - password: " . $row["user_password"]"<br>";
+        echo "username: " . $row["username"]. " - password: " . $row["user_password"] . "<br>";
       }
     }
 
