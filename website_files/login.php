@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] = "POST") {
 
     <!--Login Form-->
     <h4>Login</h4>
-    <form id="login" method="POST">
+    <form id="login" method="POST" action="login.php">
         <div class="mb-3">
             <label for="username">Username</label>
             <input type="text" id="username" placeholder="Enter your username" required>
