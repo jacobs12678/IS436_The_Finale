@@ -19,22 +19,11 @@ if (!isset($_SESSION["logged"])) {
 			  font-weight: bold;
            }
            table, th, td{
-        	  text-align: center;
-        	  margin: auto;
-        	  border: 0.5px solid;
+        	 text-align: center;
+             padding: 0 24px;
+             margin: 0 24px;
+             font-size: 20px;
            }
-            th {
-        	 text-align: center;
-             padding: 0 24px;
-             margin: 0 24px;
-             font-size: 20px;
-        	}
-        	td {
-        	 text-align: center;
-             padding: 0 24px;
-             margin: 0 24px;
-             font-size: 20px;
-        	}
            .centered {
                text-align: center;
            }
