@@ -16,28 +16,32 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $insert = "INSERT INTO loginsign (ls_t_id, ls_sub_id, user_name, username, user_password, email) VALUES (1, 1, '$name', '$username', '$password', '$email')";
         $duplicate = $conn->query("SELECT user_name, username, user_password, email FROM loginsign");
-
+        
+        $exists = false;
 
        if ($duplicate->num_rows > 0) {
-           while($row = $duplicate->fetch_assoc()) {
-               if ($name == $row["user_name"] && $username == $row["username"] && $password == $row["user_password"] && $email == $row["email"]) {
-                   $copy = "<br> Name/Username/Password/Email Already exists!";
-               } else {
-                    if ($conn->query($insert) === TRUE) {
-                        $insert_success = "<br>Account created successfully!";
-
-                    } else {
-                        echo "Error: " . $insert . "<br>" . $conn->error;
-                    }
+            while($row = $duplicate->fetch_assoc()) {
+                if ($name == $row["user_name"] && $username == $row["username"] && $password == $row["user_password"] && $email == $row["email"]) {
+                    $copy = "<br> Name/Username/Password/Email Already exists!";
+                    $exists = true;
+                    break;
                 }
-           }
+            }
+            
+            if (!$exists) {
+                if ($conn->query($insert) === TRUE) {
+                    $insert_success = "<br>Account created successfully!";
+                } else {
+                    echo "Error: " . $insert . "<br>" . $conn->error;
+                }
+            }
        }
 
-        } else {
-            $signup_failed = "Sign Up Failed. Please Try Again";
-        }
+    } else {
+        $signup_failed = "Sign Up Failed. Please Try Again";
+    }
         
-        $conn->close();
+    $conn->close();
 }
 
 ?>
