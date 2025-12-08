@@ -10,7 +10,6 @@ if($_SERVER["REQUEST_METHOD"] = "POST") {
 
   $username = $_POST["username"];
   $password = $_POST["password"];
-  $_SESSION['loggedin'] = true;
 
   print($username);
   print($password);
