@@ -80,7 +80,7 @@ $conn = new mysqli('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
 
 if(!empty($signup_page)) {
   echo $signup_page;
-  echo "<p><a href='signup.php'>Login Page</a></p>";
+  echo "<p><a href='signup.php'>Sign Up</a></p>";
 }
 
 if(!empty($just_nothing)) {
