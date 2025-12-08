@@ -42,7 +42,7 @@
 ---
 
 ## THANK THE CONFIGURATION
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.imgflip.com%2F4%2F85ovve.jpg&f=1&nofb=1&ipt=d9d98f0259bcefa739bced81423c247678c2ebcc6baeb24e22caf29dedeafc0b" alt="praise" width="150" height="150">
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.imgflip.com%2F4%2F85ovve.jpg&f=1&nofb=1&ipt=d9d98f0259bcefa739bced81423c247678c2ebcc6baeb24e22caf29dedeafc0b" alt="praise" width="250" height="250">
 - Part of this project would not have been possible without the help of this vital code, which helps the apache reads and sees php as an html script while it's insalling the dependencies
 ---
 
