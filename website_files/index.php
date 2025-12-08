@@ -111,20 +111,20 @@ if (!isset($_SESSION["logged"])) {
 				}
 				elseif (mysqli_num_rows($result) > 0){
 					echo "<div>";
-					echo "<table style='text-align:center, margin: auto, border: 0.5px solid;'>";
-					echo "<thead>
+					echo "<table class='table-light'>";
+					echo "<thead class='table-dark'>
 						<tr>
-							<th style='text-align:center, margin: auto, border: 0.5px solid, background-color: black, color: white, padding: 24px;'> Plan # </th>
-							<th style='text-align:center, margin: auto, border: 0.5px solid, background-color: black, color: white, padding: 24px;'> Services </th>
-							<th style='text-align:center, margin: auto, border: 0.5px solid, background-color: black, color: white, padding: 24px;'> Price </th>
+							<th> Plan # </th>
+							<th> Services </th>
+							<th> Price </th>
 						</tr>
 					</thead><tbody>";
 
 					while ($row = mysqli_fetch_assoc($result)) {
 						echo "<tr>
-							<td style='text-align:center, margin: auto, border: 0.5px solid, background-color: #777, color: white, padding: 16px;'>" . htmlspecialchars($row['sub_id']). "</td>
-							<td style='text-align:center, margin: auto, border: 0.5px solid, background-color: #777, color: white, padding: 16px;'>" . htmlspecialchars($row['sub_service']). "</td>
-							<td style='text-align:center, margin: auto, border: 0.5px solid, background-color: #777, color: white, padding: 16px;'>" . htmlspecialchars($row['cost']). "</td>
+							<td>" . htmlspecialchars($row['sub_id']). "</td>
+							<td>" . htmlspecialchars($row['sub_service']). "</td>
+							<td>" . htmlspecialchars($row['cost']). "</td>
 						</tr>";
 					}
 
