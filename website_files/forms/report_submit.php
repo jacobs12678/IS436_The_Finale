@@ -25,15 +25,14 @@
 </nav>
 
     <div class="row" style="margin-top: 10px; text-align: center;">
-        <h2>Your lost item has been successfully reported!</h2>
-        <a href=""><img src="../icons/pngwing.com.png" width="400" height="400" alt="ticket submit success"></a>
+        <h2>Your lost item has been successfully reported! <br><br></h2>
+        <a href=""><img src="pngwing.com.png" width="400" height="400" alt="ticket submit success"></a>
     </div>
 
 </body>
 </html>
 
 <?php
-var_dump($_POST);
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn = new mysqli('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
@@ -50,7 +49,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sssss", $item_n, $item_loc, $item_t, $item_d, $registry);
     
     if($stmt->execute()) {
-        echo "";
+    echo "<div class='text-center mt-3'>
+        <a href='report_dashboard.html' class='btn btn-success btn-lg'>View Reported Item in Dashboard!</a>
+      </div>";
+
+    echo "<div class='text-center mt-3'>
+        <a href='/index.php' class='btn btn-primary btn-lg'>Go back to homepage</a>
+      </div>";
+
     }
     else {
         echo "Error: " . $stmt->error;
