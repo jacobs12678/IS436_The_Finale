@@ -49,13 +49,18 @@ if (!isset($_SESSION["logged"])) {
             height: 45px;
             background-color: black;
            }
+           .pstyle {
+            color: orange;
+            font-size: 24px;
+            font-weight: bold;
+           }
        </style>
    </head>
   
    <body>
        <!-- The Homepage Title with Other Sections -->
        <h1> WELCOME TO THE WALL-E's LOST & FOUND </h1>
-       <p> A place for UMBC members to report and find their missing belongings in a time of crisis. <img src="pngwing.com(3).png" alt="friends" width="100" height="100"></p>
+       <p class="pstyle"> A place for UMBC members to report and find their missing belongings in a time of crisis. <img src="pngwing.com(3).png" alt="friends" width="230" height="200"></p>
 
        <!-- barrier -->
        <p class="barrier"></p>
