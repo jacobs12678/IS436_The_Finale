@@ -10,27 +10,41 @@ if (!isset($_SESSION["logged"])) {
 <html lang="en">
    <head>
        <title> UMBC Lost & Found Home Page </title>
-
-
        <!-- Style -->
        <style>
            h2 {
-             font-size: 35px;
+        	  font-size: 35px;
+			  text-align: center;
+			  color: orange;
+			  font-weight: bold;
            }
            table, th, td{
+        	  text-align: center;
+        	  margin: auto;
+        	  border: 0.5px solid;
+           }
+            th {
+        	  background-color: black;
+        	  color: white;
+        	  padding: 24px;
+        	}
+        	td {
+        	  background-color: #777;
+        	  color: white;
+        	  padding: 16px;
+        	}
+
+           .tableprompt {
              text-align: center;
              padding: 0 24px;
              margin: 0 24px;
              font-size: 20px;
            }
-           .formathead {
-             color: orange;
-             font-weight: bold;
-             text-align: left;
-             display: flex;
-             margin: 0 20px;
-             padding: 0 20px;
-             font-size: 25px;
+           .thprompt {
+             text-align: center;
+             padding: 0 24px;
+             margin: 0 24px;
+             font-size: 20px;
            }
            .centered {
                text-align: center;
@@ -69,18 +83,18 @@ if (!isset($_SESSION["logged"])) {
        <!-- The 4 Functions -->
         <div>
            <div>
-               <table>
+               <table class="tableprompt">
                    <thead>
                        <tr>
                            <!-- The Report of Lost Item -->
-                           <th> <a href="forms/report_submit_page.html" class="color"> Report </a> <img src="report_icon.jpg" alt="report" width="150" height="150"> </th>
+                           <th class="thprompt"> <a href="forms/report_submit_page.html" class="color"> Report </a> <img src="report_icon.jpg" alt="report" width="150" height="150"> </th>
                            <!-- The Search function -->
-                           <th> <a href="forms/report_dashboard.html" class="color"> Search </a> <img src="search_icon.png" alt="search" width="160" height="160"> </th>
+                           <th class="thprompt"> <a href="forms/report_dashboard.html" class="color"> Search </a> <img src="search_icon.png" alt="search" width="160" height="160"> </th>
                       
                            <!-- The Tickets -->
-                           <th> <a href="forms/admin_dashboard.html" class="color"> Tickets </a> <img src="lost_item_icon.png" alt="lostitem" width="170" height="170"></th>
+                           <th class="thprompt"> <a href="forms/admin_dashboard.html" class="color"> Tickets </a> <img src="lost_item_icon.png" alt="lostitem" width="170" height="170"></th>
                            <!-- The SWEET Logout function -->
-                           <th> <a href="logout.php" class="color">Logout</a> <img src="logout.png" alt="loggingout" width="146" height="146"></th>
+                           <th class="thprompt"> <a href="logout.php" class="color">Logout</a> <img src="logout.png" alt="loggingout" width="146" height="146"></th>
                        </tr>
                    </thead>
                </table>
@@ -147,16 +161,5 @@ if (!isset($_SESSION["logged"])) {
 			</div>
         </div>
 
-		<div>
-			<div>
-				<table>
-					<thead>
-						<tr>
-							<th> <a href ="dashboard.html" class="formatlink"> Add a Ticket </a> </th>
-						</tr>
-					</thead>
-				</table>
-			</div>
-		</div>
    </body>
 </html>
