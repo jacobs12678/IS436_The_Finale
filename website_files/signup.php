@@ -152,6 +152,7 @@ if (!empty($insert_success)) {
 
 if(!empty($copy)) {
     echo $copy;
+    echo "<p><a href='login.php'>Login</a></p>";
 }
 
 ?>
