@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> The Report Item Dashboard </title>
+        <!-- Style -->
+		<link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <h1> Reporting ANY Lost Items </h1>
+        <!-- All of the Lost Items -->
+        <div>
+            <div>
+				<div>
+					<h2> Registered Lost Items </h2>
+				</div>
+            </div>
+            <!-- insert item name, description of item, date lost, location that was lost -->
+			<div>
+				<?php
+				// Database connection
+				$connect = mysqli_connect(
+					'db',
+					'UMBCstudent',
+					'bongocat123',
+					'main_project_db'
+				);
+
+				if (!$connect) {
+					die("Database connection failed: " . mysqli_connect_error());
+				}
+
+				$query = 'SELECT * FROM submitlog';
+				$result = mysqli_query($connect, $query);
+				
+				if(!$result) {
+					echo "Error running query: " . mysqli_error($connect);
+				}
+				elseif (mysqli_num_rows($result) > 0){
+					echo "<div>";
+					echo "<table>";
+					echo "<thead>
+						<tr>
+							<th> Item ID </th>
+							<th> Item Name </th>
+                            <th> Item Type </th>
+                            <th> Item Description </th>
+                            <th> Date of Registry </th>
+							<th> Location Lost </th>
+						</tr>
+					</thead><tbody>";
+
+					while ($row = mysqli_fetch_assoc($result)) {
+						echo "<tr>
+							<td>" . htmlspecialchars($row['sl_id']). "</td>
+                            <td>" . htmlspecialchars($row['item_name']). "</td>
+                            <td>" . htmlspecialchars($row['item_type']). "</td>
+							<td>" . htmlspecialchars($row['item_desc']). "</td>
+							<td>" . htmlspecialchars($row['registered_item']). "</td>
+							<td>" . htmlspecialchars($row['item_location']). "</td>
+						</tr>";
+					}
+
+					echo "</tbody></table></div>";
+				}
+				else {
+					echo "No lost items are found!";
+				}
+
+				mysqli_close($connect);
+			    ?>
+			</div>
+        </div>
+
+		<div>
+			<div>
+				<h4> <a href ="report_submit_page.html" class="formatlink"> Report a lost item </a> </h4>
+			</div>
+		</div>
+
+		        <!-- Image -->
+        <img src="pngwing.com(4).png" alt="Wall-E" width="400" height="400"> 
+    </body>
+</html>
