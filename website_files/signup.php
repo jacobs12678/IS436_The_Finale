@@ -22,17 +22,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
            while($row = $duplicate->fetch_assoc()) {
                if ($name == $row["user_name"] && $username == $row["username"] && $password == $row["user_password"] && $email == $row["email"]) {
                    $copy = "Name/Username/Password/Email Already exists!";
-                   exit();
                }
            }
-       }
-
-
-        if ($conn->query($insert) === TRUE){
+       } else {
+            if ($conn->query($insert) === TRUE) {
             $insert_success = "<br>Account created successfully!";
-        } else {
+            
+            } else {
             echo "Error: " . $insert . "<br>" . $conn->error;
         }
+       }
 
     } else {
         $signup_failed = "Sign Up Failed. Please Try Again";
