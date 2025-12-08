@@ -2,7 +2,7 @@
 session_start();
 
 if($_SERVER["REQUEST_METHOD"] = "POST") {
-  $conn = mysqli_connect('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
+  $conn = new mysqli('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
 
   if ($conn->connect_error) {
     die("Connection failed: " . htmlspecialchars($conn->connect_error));
@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] = "POST") {
 
     <!--Login Form-->
     <h4>Login</h4>
-    <form id="login" method="POST" action="login.php">
+    <form id="login" method="POST">
         <div class="mb-3">
             <label for="username">Username</label>
             <input type="text" id="username" placeholder="Enter your username" required>
