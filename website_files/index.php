@@ -44,7 +44,10 @@ if (!isset($_SESSION["logged"])) {
   
    <body>
        <!-- The Homepage Title with Other Sections -->
-       <h1> WELCOME TO THE LOST & FOUND </h1>
+       <h1> WELCOME TO THE WALL-E's LOST & FOUND </h1>
+
+       <!-- barrier -->
+
        <p> A place for UMBC members to report and find their missing belongings in a time of crisis.</p>
 
 
@@ -64,11 +67,13 @@ if (!isset($_SESSION["logged"])) {
                            <!-- The Tickets -->
                            <th> <a href="forms/admin_dashboard.html" class="color"> Tickets </a> <img src="lost_item_icon.png" alt="lostitem" width="170" height="170"></th>
                            <!-- The SWEET Logout function -->
-                           <th> <a href="logout.php" class="color">Logout</a></th>
+                           <th> <a href="logout.php" class="color">Logout</a> <img src="logout.png" alt="loggingout" width="160" height="160"></th>
                        </tr>
                    </thead>
                </table>
            </div>
         </div>
+
+        <!-- barrier -->
    </body>
 </html>
