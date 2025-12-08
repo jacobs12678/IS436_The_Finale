@@ -25,6 +25,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
        if ($username == $row["username"] && $password == $row["user_password"]) {
          $_SESSION['logged'] = true;
          header('Location: index.php');
+         exit();
        }
      }
     
