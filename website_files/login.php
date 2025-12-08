@@ -1,5 +1,22 @@
 <?php
 session_start();
+
+if($_SERVER["REQUEST_METHOD"] = "POST") {
+  $conn = new mysqli('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
+
+  if ($conn->connect_error) {
+    die("Connection failed: " . htmlspecialchars($conn->connect_error));
+  }
+
+  $username = $_POST["username"];
+  $password = $_POST["password"];
+  $_SESSION['loggedin'] = true;
+
+  print($username);
+  print($password);
+
+}
+
 ?>
 
 <!doctype html>
@@ -62,22 +79,3 @@ session_start();
 
 </body>
 </html>
-
-<?php
-if($_SERVER["REQUEST_METHOD"] = "POST") {
-  $conn = new mysqli('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
-
-  if ($conn->connect_error) {
-    die("Connection failed: " . htmlspecialchars($conn->connect_error));
-  }
-
-  $username = $_POST["username"];
-  $password = $_POST["password"];
-  $_SESSION['loggedin'] = true;
-
-  print($username);
-  print($password);
-
-}
-
-?>
