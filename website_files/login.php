@@ -70,14 +70,6 @@ $conn = new mysqli('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
           <label for="password">Password</label>
           <input type="password" id="password" name="password" placeholder="Enter your password" required>
       </div>
-
-      <div>
-          <div>
-              <input type="checkbox" id="rememberMe">
-              <label for="rememberMe">Remember me</label>
-          </div>
-          <a href="#" class="text-decoration-none">Forgot Password?</a>
-      </div>
       <button type="submit">Login</button>
   </form>
 
