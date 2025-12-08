@@ -17,9 +17,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $insert = "INSERT INTO loginsign (ls_t_id, ls_sub_id, user_name, username, user_password, email) VALUES (1, 1, '$name', '$username', '$password', '$email')";
 
         if ($conn->query($insert) === TRUE){
-            echo "Successfull";
-            echo "Please go back to the login page!";
-            echo "<p><a href='login.php'>Login In</a></p>";
+            $insert_success = "Successfull!";
         } else {
             echo "Error: " . $insert . "<br>" . $conn->error;
         }
@@ -84,6 +82,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 if(!empty($signup_failed)) {
     echo $signup_failed;
+    echo "<p><a href='login.php'>Login In</a></p>";
+}
+
+if (!empty($insert_success)) {
+    echo $insert_success;
+    echo "Please go back to the login page!";
     echo "<p><a href='login.php'>Login In</a></p>";
 }
 
