@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Inserting data into database table ticket
     $stmt = $conn->prepare("INSERT INTO submitlog (item_name, item_location, item_type, item_desc, registered_item) VALUES (?, ?, ?, ?, ?)");
-    $stmt->bind_param("sss", $item_n, $item_loc, $item_t, $item_d, $registry);
+    $stmt->bind_param("sssss", $item_n, $item_loc, $item_t, $item_d, $registry);
     
     if($stmt->execute()) {
         echo "Data inserted successfully!";
