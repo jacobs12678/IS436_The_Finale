@@ -14,8 +14,6 @@ if($_SERVER["REQUEST_METHOD"] = "POST") {
   print($username);
   print($password);
 
-  header("Location: index.php");
-  exit();
 }
 ?>
 
@@ -43,12 +41,12 @@ if($_SERVER["REQUEST_METHOD"] = "POST") {
     <form id="login" method="POST">
         <div class="mb-3">
             <label for="username">Username</label>
-            <input type="text" id="username" placeholder="Enter your username" required>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
         </div>
 
         <div class="mb-3">
             <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter your password" required>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
         </div>
 
         <div>
