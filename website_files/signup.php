@@ -25,6 +25,16 @@
   <h4>Create Your Account!</h4>
   <form id="signup" method="POST">
       <div class="mb-3">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="mb-3">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="mb-3">
           <label for="username">Username</label>
           <input type="text" id="username" name="username" placeholder="Enter your username" required>
       </div>
