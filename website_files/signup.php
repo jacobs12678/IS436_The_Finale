@@ -14,7 +14,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $username = $_POST["username"];
         $password = $_POST["password"];
 
+        $insert = "INSERT INTO loginsign (user_name, username, user_password, email) VALUES ($name, $username, $password, $email)";
 
+        if ($conn->query($insert) === TRUE){
+            echo "Insert Successfull";
+            header('Location: login.php');
+            exit();
+        } else {
+            echo "Error: " . $insert . "<br>" . $conn->error;
+        }
 
     } else {
         $signup_failed = "Sign Up Failed. Please Try Again";
