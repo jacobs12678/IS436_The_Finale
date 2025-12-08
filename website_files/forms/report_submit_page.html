@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> The Item Submit Form </title>
+    </head>
+    
+    <body>
+        <h3> Reporting Lost Item Page </h3>
+
+        <!-- Add Data -->
+        <div>
+            <div>
+				<h4> Insert the necessary information about the lost item: </h4>
+				<form action="report_submit.php" method="post">
+					<div>
+						<label> Item name: </label>
+						<input type="text" id="nitem" name="nitem">
+					</div>
+					<div>
+						<label> Location of lost item: </label>
+						<input type="text" id="itemloc" name="itemloc">
+					</div>
+					<div>
+						<label> Item type: </label>
+						<input type="text" id="itemtype" name="itemtype">
+					</div>
+                    	<div>
+						<label> Description of item: </label>
+						<textarea id="itemdesc" rows="4" name="itemdesc"> </textarea>
+					</div>
+                    	<div>
+						<label> Insert date to register item: </label>
+						<input type="datetime-local" id="rdate" name="rdate">
+					</div>
+
+					<!-- Visually separates content (the invisible wall/barrier) -->
+					<hr>
+
+					<!-- Submit button -->
+					<button type="submit"> Register </button>
+				</form>>
+            </div>
+        </div>
+    </body>
+</html>

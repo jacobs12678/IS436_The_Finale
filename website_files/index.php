@@ -1,9 +1,10 @@
 <?php
-/*session_start();
-if (!isset($_SESSION['logged'])) {
+session_start();
+if (!isset($_SESSION["logged"])) {
+	echo ($_SESSION["username"]);
 	header('Location: login.php');
 	exit();
-}*/
+}
 ?>
 
 <!doctype html>
