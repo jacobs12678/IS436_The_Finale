@@ -39,6 +39,7 @@ if (!isset($_SESSION["logged"])) {
              padding: 0 24px;
              margin: 0 24px;
              font-size: 20px;
+             background-color: white;
            }
            .thprompt {
              text-align: center;
