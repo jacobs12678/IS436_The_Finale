@@ -45,5 +45,16 @@
     - Created our main GitHub that contains our project plan board
 - ### Analysis
     - The use-case consisted of our login page, report for lost item, tickets to get lost item, search to see lost items, and a logout page
+    - Wrote the requirements that are necessary for our applications
+    - Included interviews and obesvation notes to perform an anaylsis of our project
+    - Created a docker and our sql database to get ready for our design/implementation
 - ### Design
+    - Made a sql script to start inserting the necessary data like the username and password, lost items
+    - Designed our an architecture diagram of our network, database, security, and monitoring of our WALL-E Lost N Found
+    - Listed the necessary hardware needed for our applications to run smoothly. 
 - ### Implementation
+    - Made a wireframe for our basic outline for our application
+    - Developed our UI/UX for our WALL-E Lost N Found
+    - Created a functioning program for all of our webpages
+    - Implemented VSCode, GitHub, Docker, and Render for our WALL-E Lost N Found application
+    - Finally documentated and prepare a demo for our Wall-E Lost N Found
