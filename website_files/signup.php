@@ -18,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($conn->query($insert) === TRUE){
             echo "Successfull";
-            echo "Please go back to the login page!"
+            echo "Please go back to the login page!";
             echo "<p><a href='login.php'>Login In</a></p>";
         } else {
             echo "Error: " . $insert . "<br>" . $conn->error;
