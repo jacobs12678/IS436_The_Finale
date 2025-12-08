@@ -11,6 +11,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   if ($_POST["username"] != "" && $_POST["password"] != "") {
     $username = $_POST["username"];
     $password = $_POST["password"];
+
+    $query = $conn->query("SELECT username, user_password FROM loginsing");
+
+    if ($query->num_rows > 0) {
+      while($row = $query->fetch_assoc()) {
+        echo "username: " . $row["username"]. " - password: " . $row["user_password"]"<br>";
+      }
+    }
+
   } else {
     echo "Login Failed. Please Try Again";
     echo "<p><a href='login.php'>Login Page</a></p>";
