@@ -14,13 +14,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $username = $_POST["username"];
         $password = $_POST["password"];
 
-        echo $name;
-        echo $email;
-        echo $username;
-        echo $password;
+
+
+    } else {
+        $signup_failed = "Sign Up Failed. Please Try Again";
     }
 }
 
+$conn->close();
 
 ?>
 
