@@ -8,13 +8,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     die("Connection failed: " . htmlspecialchars($conn->connect_error));
   }
 
-  $username = $_POST["username"];
-  $password = $_POST["password"];
-
-  print($username);
-  print($password);
+  
 
 }
+
 ?>
 
 <!doctype html>
