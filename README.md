@@ -74,3 +74,10 @@
 | Ruby     |  rzheng2@umbc.edu     | Coding                                        |
 | Charles  |  charlem1@umbc.edu    | IS, Health discussion                         |
 | Kerstyn  |  kmyers7@umbc.edu     | Technology anything techy.                    |
+---
+
+## Others
+1. [More about the team](https://docs.google.com/document/d/1RxHOfnJiuhgOo4wG1rYfx6ivO1J_gSk3vUrxZLQ7-x0/edit?usp=sharing)
+1. [Lost and Found Platform (Github)](https://github.com/charlem1/The-Wall-Es-Lost-and-Found-Platform.git)
+1. [Project Planning Board (Github)](https://github.com/users/charlem1/projects/8)
+1. [Lost N Found Website](https://tenor.com/view/rick-roll-gif-12185260712090534766)
