@@ -15,11 +15,11 @@
 ## Report Webpage
 - After clicking on the link called Report, the user can add a lost item to the registry.
 - User will enter: 
-- - the item name
-- - location of the lost item
-- - the type of item
-- - detailed scription of the item
-- - and the date the item was lost
+    - the item name
+    - location of the lost item
+    - the type of item
+    - detailed scription of the item
+    - and the date the item was lost
 - If you would like to go back, you can click on the back button.
 
 ## Search Webpage
