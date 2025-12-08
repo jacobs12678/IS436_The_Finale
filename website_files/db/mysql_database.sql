@@ -36,7 +36,6 @@ CREATE TABLE subscription (
 sub_id int NOT NULL AUTO_INCREMENT, 
 sub_service varchar(300)  NOT NULL,
 cost int  NOT NULL,
-payment_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP  NOT NULL,
 CONSTRAINT sub_PK PRIMARY KEY (sub_id));
 
 -- INSERT VALUES for subscription table

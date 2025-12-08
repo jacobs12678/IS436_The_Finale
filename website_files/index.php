@@ -89,5 +89,74 @@ if (!isset($_SESSION["logged"])) {
 
         <!-- barrier -->
         <p class="barrier"></p>
+
+        <!-- Subscription Plan Display -->
+        <div>
+            <div>
+				<div>
+					<h2> Subscription Plans </h2>
+				</div>
+            </div>
+			<div>
+				<?php
+				// Database connection
+				$connect = mysqli_connect(
+					'db',
+					'UMBCstudent',
+					'bongocat123',
+					'main_project_db'
+				);
+
+				if (!$connect) {
+					die("Database connection failed: " . mysqli_connect_error());
+				}
+
+				$query = 'SELECT * FROM subscription';
+				$result = mysqli_query($connect, $query);
+				
+				if(!$result) {
+					echo "Error running query: " . mysqli_error($connect);
+				}
+				elseif (mysqli_num_rows($result) > 0){
+					echo "<div>";
+					echo "<table>";
+					echo "<thead>
+						<tr>
+							<th> Plan # </th>
+							<th> Service </th>
+							<th> Price </th>
+						</tr>
+					</thead><tbody>";
+
+					while ($row = mysqli_fetch_assoc($result)) {
+						echo "<tr>
+							<td>" . htmlspecialchars($row['sub_id']). "</td>
+							<td>" . htmlspecialchars($row['sub_service']). "</td>
+							<td>" . htmlspecialchars($row['cost']). "</td>
+						</tr>";
+					}
+
+					echo "</tbody></table></div>";
+				}
+				else {
+					echo "No tickets are found!";
+				}
+
+				mysqli_close($connect);
+			    ?>
+			</div>
+        </div>
+
+		<div>
+			<div>
+				<table>
+					<thead>
+						<tr>
+							<th> <a href ="dashboard.html" class="formatlink"> Add a Ticket </a> </th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
    </body>
 </html>
