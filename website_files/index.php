@@ -51,7 +51,7 @@ if (!isset($_SESSION["logged"])) {
            }
            .pstyle {
             color: orange;
-            font-size: 15px;
+            font-size: 21px;
            }
        </style>
    </head>
