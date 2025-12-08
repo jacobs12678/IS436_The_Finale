@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $username = $_POST["username"];
         $password = $_POST["password"];
 
-        $insert = "INSERT INTO loginsign (ls_t_id, user_name, username, user_password, email) VALUES (1, '$name', '$username', '$password', '$email')";
+        $insert = "INSERT INTO loginsign (ls_t_id, ls_sub_id, user_name, username, user_password, email) VALUES (1, 1, '$name', '$username', '$password', '$email')";
 
         if ($conn->query($insert) === TRUE){
             echo "Insert Successfull";
