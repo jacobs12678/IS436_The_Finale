@@ -55,7 +55,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>";
 
     echo "<div class='text-center mt-3'>
-        <a href='ticket_submit.php' class='btn btn-primary btn-lg'>Submit Another Ticket</a>
+        <a href='report_submit_page.html' class='btn btn-primary btn-lg'>Submit Another Ticket</a>
       </div>";
 
     }
