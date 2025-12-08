@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
  if ($conn->connect_error) {
-   die("Connection failed: " . htmlspecialchars($conn->connect_error));
+   die("Connection failed: " . $conn->connect_error);
  }
 
 
@@ -37,17 +37,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
      echo "Nothing added to the table";
      echo "<p><a href='login.php'>Login Page</a></p>";
 
-
    }
-
 
  } else {
    echo "Login Failed. Please Try Again";
    echo "<p><a href='login.php'>Login Page</a></p>";
  }
-
-
-
 
 }
 
