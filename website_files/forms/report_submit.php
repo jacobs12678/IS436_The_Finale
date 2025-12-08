@@ -24,7 +24,10 @@
   </div>
 </nav>
 
-<a href=""><img src="../icons/pngwing.com.png" width="400" height="400" alt="ticket submit success"></a>
+    <div class="row" style="margin-top: 10px; text-align: center;">
+        <h2>Your lost item has been successfully reported!</h2>
+        <a href=""><img src="../icons/pngwing.com.png" width="400" height="400" alt="ticket submit success"></a>
+    </div>
 
 </body>
 </html>
@@ -47,7 +50,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sssss", $item_n, $item_loc, $item_t, $item_d, $registry);
     
     if($stmt->execute()) {
-        echo "Data inserted successfully!";
+        echo "";
     }
     else {
         echo "Error: " . $stmt->error;
