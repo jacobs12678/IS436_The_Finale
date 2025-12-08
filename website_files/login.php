@@ -80,10 +80,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <button type="submit">Login</button>
     </form>
 
-    <form id="signup" method="POST" action="signup.php">
-        <h5><br><br>Don't have an account? Sign up below:</h5>
-        <button type="submit">Sign Up</button>
-    </form>
+    <div>
+      <h5><br><br>Don't have an account? Please sign up below!</h5>
+      <a href='signup.php'>Sign Up</a>
+    </div>
 
 </div>
 
@@ -129,11 +129,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 </html>
 
+<div style="text-align: center;">
 <?php
 
 if(!empty($signup_page)) {
+
   echo $signup_page;
-  echo "<p><a href='signup.php'>Sign Up</a></p>";
 }
 
 if(!empty($just_nothing)) {
@@ -146,5 +147,5 @@ if(!empty($login_failed)) {
   echo "<p><a href='login.php'>Login Page</a></p>";
 }
 ?>
-
+</div>
 
