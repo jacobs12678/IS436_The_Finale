@@ -4,40 +4,39 @@ session_start();
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 $conn = new mysqli('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
 
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-if ($_POST["username"] != "" && $_POST["password"] != "") {
-  $username = $_POST["username"];
-  $password = $_POST["password"];
-
-  $query = $conn->query("SELECT username, user_password FROM loginsign");
-
-  if ($query->num_rows > 0) {
-    while($row = $query->fetch_assoc()) {
-      if ($username == $row["username"] && $password == $row["user_password"]) {
-        $_SESSION["username"] = $username;
-        $_SESSION["logged"] = true;
-        header('Location: index.php');
-        exit();
-      }
-      
-    }
-  
-    echo "You need to sign up now";
-    echo "<p><a href='login.php'>Login Page</a></p>";
-
-  } else {
-    echo "Nothing added to the table";
-    echo "<p><a href='login.php'>Login Page</a></p>";
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
   }
 
-} else {
-  echo "Login Failed. Please Try Again";
-  echo "<p><a href='login.php'>Login Page</a></p>";
-}
+  if ($_POST["username"] != "" && $_POST["password"] != "") {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
 
+    $query = $conn->query("SELECT username, user_password FROM loginsign");
+
+    if ($query->num_rows > 0) {
+      while($row = $query->fetch_assoc()) {
+        if ($username == $row["username"] && $password == $row["user_password"]) {
+          $_SESSION["username"] = $username;
+          $_SESSION["logged"] = true;
+          header('Location: index.php');
+          exit();
+        }
+
+      }
+  
+      echo "You need to sign up now";
+      echo "<p><a href='login.php'>Login Page</a></p>";
+
+    } else {
+      echo "Nothing added to the table";
+      echo "<p><a href='login.php'>Login Page</a></p>";
+    }
+
+  } else {
+    echo "Login Failed. Please Try Again";
+    echo "<p><a href='login.php'>Login Page</a></p>";
+  }
 
 }
 
