@@ -25,7 +25,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
       }
   
-      $signup_page = "You need to sign up now";
+      $signup_page = "Username or password does not exist. Try again or please sign up.";
 
     } else {
       $just_nothing = "Nothing added to the table";
