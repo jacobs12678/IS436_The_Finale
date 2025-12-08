@@ -3,12 +3,22 @@ session_start();
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn = new mysqli('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
-    
+
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
 
+    if ($_POST["name"] != "" && $_POST["email"] != "" && $_POST["username"] != "" && $_POST["password"] != "") {
+        $username = $_POST["name"];
+        $email = $_POST["email"];
+        $username = $_POST["username"];
+        $password = $_POST["password"];
 
+        echo $username;
+        echo $email;
+        echo $username;
+        echo $password;
+    }
 }
 
 
