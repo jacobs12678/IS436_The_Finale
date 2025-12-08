@@ -2,7 +2,7 @@
 session_start();
 
 if($_SERVER["REQUEST_METHOD"] = "POST") {
-  $conn = new mysqli('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
+  $conn = mysqli_connect('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
 
   if ($conn->connect_error) {
     die("Connection failed: " . htmlspecialchars($conn->connect_error));
