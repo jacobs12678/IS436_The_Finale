@@ -19,6 +19,7 @@
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
+            <a class="nav-link" href="/index.php">Return to homepage</a>
       </div>
     </div>
   </div>
@@ -51,8 +52,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <a href='admin_dashboard.html' class='btn btn-success btn-lg'>View Ticket in Admin Dashboard!</a>
       </div>";
 
-    echo "<div class='text-center mt-3'>
-        <a href='/index.php' class='btn btn-primary btn-lg'>Go back to homepage</a>
+        echo "<div class='text-center mt-3'>
+        <a href='dashboard.html' class='btn btn-primary btn-lg'>Submit Another Ticket</a>
       </div>";
     }
     else {
