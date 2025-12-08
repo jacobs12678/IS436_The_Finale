@@ -1,6 +1,9 @@
 # WALL-E Lost N Found
 # User Guide Documentation 
 
+## SDLC of WALL-E Lost N Found
+- ### Planning
+
 ## Login Webpage
 - First, login to the website with the correct username and password.
 - If the user does not have a username or password, they need to sign up for a username and password
@@ -20,6 +23,7 @@
     - the type of item
     - detailed scription of the item
     - and the date the item was lost
+- Afterwards, click register
 - If you would like to go back, you can click on the back button.
 
 ## Search Webpage
