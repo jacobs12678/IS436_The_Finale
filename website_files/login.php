@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -60,8 +64,6 @@
 </html>
 
 <?php
-session_start();
-
 if($_SERVER["REQUEST_METHOD"] = "POST") {
   $conn = new mysqli('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
 
