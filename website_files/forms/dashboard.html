@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title> The Item and Ticket Submit form </title>
+        <title> Ticket Submit Form </title>
 		<link rel="stylesheet" href="styles.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 		<style>
 		   .barrier {
             height: 45px;
@@ -10,33 +11,57 @@
            }
 		</style>
     </head>
+	<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://umbc.edu/wp-content/uploads/2022/02/umbc-primary-logo-250x58.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+      </div>
+    </div>
+  </div>
+</nav>
     
     <body>
-        <h3 class="formathead"> Ticket Submit Page </h3>
+        <h3 class="formathead"> <br> Ticket Submit Form: <br><br></h3>
 		<p class="barrier"></p>
         <!-- Add Data -->
         <div>
-            <div>
-				<h4> Insert the Ticket: </h4>
+            <div class="container py-4">
 				<form action="ticket_submit.php" method="post">
-					<div>
-						<label> Confirmation (Confirmed, Pending, or Cancelled) </label>
-						<input type="text" id="confirmation" name="confirmation">
-					</div>
-					<div>
-						<label> Ticket Type (Technical Support, Service Request, or Billing and Payment) </label>
-						<input type="text" id="tickettype" name="tickettype">
-					</div>
+
+					<div class="mb-3">
+        				<label class="form-label" for="confirmation">Confirmation:</label>
+        				<input class="form-control" name= "confirmation" id="confirmation" type="text" placeholder="Confirmed, Pending, or Cancelled" required/>
+       				</div>
+
+					<div class="mb-3">
+        				<label class="form-label" for="tickettype">Ticket Type:</label>
+        				<input class="form-control" name= "tickettype" id="tickettype" type="text" placeholder="Technical Support, Service Request, or Billing and Payment" required/>
+       				</div>
+
 					<div>
 						<label> Date Submitted </label>
 						<input type="datetime-local" id="submitdate" name="submitdate">
 					</div>
 
+					<div class="mb-3">
+        				<label class="form-label" for="tickettype">Date Submitted:</label>
+        				<input class="form-control" name= "submitdate" id="submitdate" type="datetime-local" required/>
+       				</div>
+
 					<!-- Visually separates content (the invisible wall/barrier) -->
 					<hr>
 
 					<!-- Submit button -->
-					<button type="submit"> Submit </button>
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Submit </button>
 				</form>
             </div>
         </div>
