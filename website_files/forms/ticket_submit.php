@@ -48,7 +48,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     
     if($stmt->execute()) {
         echo "<div class='text-center mt-3'>
-        <a href='report_dashboard.html' class='btn btn-success btn-lg'>View Ticket in Admin Dashboard!</a>
+        <a href='admin_dashboard.html' class='btn btn-success btn-lg'>View Ticket in Admin Dashboard!</a>
       </div>";
 
     echo "<div class='text-center mt-3'>
