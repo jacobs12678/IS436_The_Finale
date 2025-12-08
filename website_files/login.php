@@ -22,7 +22,7 @@ if ($_POST["username"] != "" && $_POST["password"] != "") {
         header('Location: index.php');
         exit();
       }
-
+      
     }
   
     echo "You need to sign up now";
