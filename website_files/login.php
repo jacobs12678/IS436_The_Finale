@@ -11,14 +11,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   if ($_POST["username"] != "" && $_POST["password"] != "") {
     $username = $_POST["username"];
     $password = $_POST["password"];
-
-    $valid_username = $conn->prepare(SELECT username from loginsign);
-    $valid_username->execute();
-    $result = $valid_username;
-
-    echo($result);
-
-
   } else {
     echo "Login Failed. Please Try Again";
     echo "<p><a href='login.php'>Login Page</a></p>";
