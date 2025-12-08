@@ -27,9 +27,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $signup_failed = "Sign Up Failed. Please Try Again";
     }
+    $conn->close();
+
 }
 
-$conn->close();
 
 ?>
 

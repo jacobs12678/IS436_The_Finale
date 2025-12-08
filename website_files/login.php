@@ -35,6 +35,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $login_failed = "Login Failed. Please Try Again";
   }
 
+  $conn->close();
+  
 }
 
 $conn->close();
