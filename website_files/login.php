@@ -16,14 +16,13 @@ if ($_POST["username"] != "" && $_POST["password"] != "") {
 
   if ($query->num_rows > 0) {
     while($row = $query->fetch_assoc()) {
-      echo "username: " . $row["username"]. " - password: " . $row["user_password"] . "<br>";
       if ($username == $row["username"] && $password == $row["user_password"]) {
         $_SESSION["username"] = $username;
         $_SESSION["logged"] = true;
         header('Location: index.php');
         exit();
       }
-      
+
     }
   
     echo "You need to sign up now";
