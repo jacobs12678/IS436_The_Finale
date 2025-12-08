@@ -1,4 +1,16 @@
 <?php
+session_start();
+
+if($_SERVER["REQUEST_METHOD"] = "POST") {
+  $conn = mysqli('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
+
+  $username = $_POST["username"];
+  $password = $_POST["password"];
+
+  print($username);
+  print($password);
+
+}
 
 
 ?>
@@ -21,19 +33,20 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    
 
     <!--Login Form-->
     <h4>Login</h4>
-    <form id="login">
+    <form id="login" method="POST">
         <div class="mb-3">
             <label for="username">Username</label>
             <input type="text" id="username" placeholder="Enter your username" required>
         </div>
+
         <div class="mb-3">
             <label for="password">Password</label>
             <input type="password" id="password" placeholder="Enter your password" required>
         </div>
+
         <div>
             <div>
                 <input type="checkbox" id="rememberMe">
