@@ -94,7 +94,7 @@ INSERT INTO loginsign (ls_id, ls_t_id, ls_sub_id, user_name, username, user_pass
 ALTER TABLE loginsign MODIFY ls_id int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 3;
 /*----------------------------------------------------------------------------------------------*/
 
-/* input required */
+/* For the admins */
 /* Search Function/Display General Item(s) */
 CREATE TABLE searchdisplay (
 sd_id int NOT NULL AUTO_INCREMENT,
