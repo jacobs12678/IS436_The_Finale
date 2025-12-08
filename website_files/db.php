@@ -1,5 +1,5 @@
 <?php
-$servername = getenv('DB_HOST'); // For Render to be compatible with to access the database
+$servername = 'db';
 $username = "UMBCstudent";
 $password = "bongocat123";
 $database = "main_project_db";
