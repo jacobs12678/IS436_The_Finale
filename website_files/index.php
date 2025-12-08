@@ -50,22 +50,21 @@ if (!isset($_SESSION["logged"])) {
 
        <!-- Image -->
        <p class="centered"> <img src="pngwing.com(1).png" alt="main picture" width="500" height="300"> </p>
-       <!-- The 4 Links -->
+       <!-- The 4 Functions -->
         <div>
            <div>
                <table>
                    <thead>
                        <tr>
-                           <th class="color"> Report <img src="report_icon.jpg" alt="report" width="150" height="150"> </th>
-                          
+                           <!-- The Report of Lost Item -->
+                           <th> <a href="forms/report_dashboard.html" class="color"> Report </a> <img src="report_icon.jpg" alt="report" width="150" height="150"> </th>
+                           <!-- The Search function -->
                            <th class="color"> Search <img src="search_icon.png" alt="search" width="160" height="160"> </th>
                       
-                           <th class="color"> Find <img src="lost_item_icon.png" alt="lostitem" width="170" height="170"> </th>
-                           <!-- Ticket needs an image -->
-                           <th> <a href="forms/admin_dashboard.html" class="color"> Tickets </a></th>
-                           <th> <a href="logout.php">Logout</a></th>
-
-
+                           <!-- The Tickets -->
+                           <th> <a href="forms/admin_dashboard.html" class="color"> Tickets </a> <img src="lost_item_icon.png" alt="lostitem" width="170" height="170"></th>
+                           <!-- The SWEET Logout function -->
+                           <th> <a href="logout.php" class="color">Logout</a></th>
                        </tr>
                    </thead>
                </table>
