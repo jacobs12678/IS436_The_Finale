@@ -111,8 +111,8 @@ if (!isset($_SESSION["logged"])) {
 				}
 				elseif (mysqli_num_rows($result) > 0){
 					echo "<div>";
-					echo "<table class='table-light'>";
-					echo "<thead class='table-dark'>
+					echo "<table class='table-dark'>";
+					echo "<thead class='table-light'>
 						<tr>
 							<th> Plan # </th>
 							<th> Services </th>
