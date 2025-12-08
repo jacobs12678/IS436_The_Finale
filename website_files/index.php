@@ -55,8 +55,7 @@ if (!isset($_SESSION["logged"])) {
    <body>
        <!-- The Homepage Title with Other Sections -->
        <h1> WELCOME TO THE WALL-E's LOST & FOUND </h1>
-       <p> A place for UMBC members to report and find their missing belongings in a time of crisis.</p>
-       <img src="pngwing.com(3).png" class="center" alt="friends" width="200" height="100">
+       <p> A place for UMBC members to report and find their missing belongings in a time of crisis. <img src="pngwing.com(3).png" alt="friends" width="100" height="100"></p>
 
        <!-- barrier -->
        <p class="barrier"></p>
