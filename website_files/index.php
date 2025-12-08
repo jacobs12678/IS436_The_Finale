@@ -6,27 +6,6 @@ if (!isset($_SESSION['loggedin'])) {
 }
 ?>
 
-<html>
-  <head>
-    <!-- <link rel="stylesheet" href="gradecalc_styles.css"> -->
-    <title> The Login Page </title>
-  </head>
-  <body>
-    <h1> Login </h1>
-    <form method="post">
-      Chosen Ticket (# num): ......
-      Chosen Subscription (# num): ......
-      First Name: ......
-      Username: <input type="text" name="username" pattern="[A-Za-z]{2}[0-9]{5}" required>
-      Password: <input type="password" name="password" required><br><br>
-      Email: ......
-      <button type="submit">Login</button>
-    </form>
-  
-    <?php if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?>
-  </body>
-</html>
-
 <!doctype html>
 <html lang="en">
     <head>
