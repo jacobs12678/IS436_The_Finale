@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
 if($_SERVER["REQUEST_METHOD"] == "POST") {
  $conn = new mysqli('db', 'UMBCstudent', 'bongocat123', 'main_project_db');
 
@@ -23,6 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
      while($row = $query->fetch_assoc()) {
        echo "username: " . $row["username"]. " - password: " . $row["user_password"] . "<br>";
        if ($username == $row["username"] && $password == $row["user_password"]) {
+         $_SESSION['username'] = $username;
          $_SESSION['logged'] = true;
          header('Location: index.php');
          exit();
