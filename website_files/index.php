@@ -1,7 +1,7 @@
 <?php
 session_start();
+echo ($_SESSION["username"]);
 if (!isset($_SESSION["logged"])) {
-	echo ($_SESSION["username"]);
 	header('Location: login.php');
 	exit();
 }
