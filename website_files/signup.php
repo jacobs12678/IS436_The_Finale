@@ -21,9 +21,9 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <!--Login Form-->
+  <!--Sign Up Form-->
   <h4>Create Your Account!</h4>
-  <form id="login" method="POST">
+  <form id="signup" method="POST">
       <div class="mb-3">
           <label for="username">Username</label>
           <input type="text" id="username" name="username" placeholder="Enter your username" required>
@@ -34,13 +34,6 @@
           <input type="password" id="password" name="password" placeholder="Enter your password" required>
       </div>
 
-      <div>
-          <div>
-              <input type="checkbox" id="rememberMe">
-              <label for="rememberMe">Remember me</label>
-          </div>
-          <a href="#" class="text-decoration-none">Forgot Password?</a>
-      </div>
       <button type="submit">Create</button>
   </form>
 
