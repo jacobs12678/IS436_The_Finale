@@ -24,6 +24,17 @@ if (!isset($_SESSION["logged"])) {
              margin: 0 24px;
              font-size: 20px;
            }
+
+           #tdprompt td {
+              background-color: #777;
+        	  color: white;
+        	  padding: 16px;
+           }
+           #thprompt th {
+        	  background-color: black;
+        	  color: white;
+        	  padding: 24px;
+           }
            .centered {
                text-align: center;
            }
@@ -111,20 +122,20 @@ if (!isset($_SESSION["logged"])) {
 				}
 				elseif (mysqli_num_rows($result) > 0){
 					echo "<div>";
-					echo "<table class='table-dark'>";
-					echo "<thead class='table-light'>
+					echo "<table>";
+					echo "<thead>
 						<tr>
-							<th> Plan # </th>
-							<th> Services </th>
-							<th> Price </th>
+							<th id='thprompt'> Plan # </th>
+							<th id='thprompt'> Services </th>
+							<th id='thprompt'> Price </th>
 						</tr>
 					</thead><tbody>";
 
 					while ($row = mysqli_fetch_assoc($result)) {
 						echo "<tr>
-							<td>" . htmlspecialchars($row['sub_id']). "</td>
-							<td>" . htmlspecialchars($row['sub_service']). "</td>
-							<td>" . htmlspecialchars($row['cost']). "</td>
+							<td id='tdprompt'>" . htmlspecialchars($row['sub_id']). "</td>
+							<td id='tdprompt'>" . htmlspecialchars($row['sub_service']). "</td>
+							<td id='tdprompt'>" . htmlspecialchars($row['cost']). "</td>
 						</tr>";
 					}
 
