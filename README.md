@@ -3,15 +3,23 @@
 
 ## Login Webpage
 - First, login to the website with the correct username and password.
-Username = link789
-Password = triforce3
+- If the user does not have a username or password, they need to sign up for a username and password
+- After user enters their name, email, username, and password, go back to the login page
+- Finally, enter the new, correct username and password
 
 ## Main Webpage
 - A welcome page that allows the user to freely view the displayed content
 - You can click on either of the 4 linked functions below
+- Subscription Service is placed down below to use the UMBC WALL_E Lost N Found
 
 ## Report Webpage
 - After clicking on the link called Report, the user can add a lost item to the registry.
+- User will enter: 
+- - the item name
+- - location of the lost item
+- - the type of item
+- - detailed scription of the item
+- - and the date the item was lost
 - If you would like to go back, you can click on the back button.
 
 ## Search Webpage
