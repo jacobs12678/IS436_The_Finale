@@ -6,6 +6,8 @@
 ## Link to Presentation
 https://docs.google.com/presentation/d/1WxcQ-O2V-h0Iqa4nZXnhKlld5tAkQtXXnFIja4czPdY/edit
 
+---
+
 ## Login Webpage
 - First, login to the website with the correct username and password.
 - If the user does not have a username or password, they need to sign up for a username and password
