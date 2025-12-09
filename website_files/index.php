@@ -29,6 +29,7 @@ if (!isset($_SESSION["logged"])) {
 			  font-weight: bold;
            }
            table, th, td{
+             align: center;
         	 text-align: center;
              padding: 0 24px;
              margin: 0 24px;
