@@ -70,7 +70,7 @@ if (!isset($_SESSION["logged"])) {
        <!-- Image -->
        <p class="centered"> <img src="pngwing.com(1).png" alt="main picture" width="500" height="300"> </p>
        <!-- The 4 Functions -->
-        <div class="row" style="margin-top: 10px; text-align: center;">
+        <div>
            <div>
                <table>
                    <thead>
