@@ -1,6 +1,5 @@
 <?php
-// COMPLETE NO CHANGE!
-$servername = "db"; // Same name from docker-compose.yml here! (DON'T CHANGE!!!)
+$servername = 'db';
 $username = "UMBCstudent";
 $password = "bongocat123";
 $database = "main_project_db";
