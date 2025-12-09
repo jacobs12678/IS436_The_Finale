@@ -3,6 +3,9 @@
 
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fprod-ripcut-delivery.disney-plus.net%2Fv1%2Fvariant%2Fdisney%2F333D1922787704885572C2ADCFD30D2F5E9CE1217000E60593C4B648DD322CCF%2Fscale%3FaspectRatio%3D1.78%26format%3Djpeg&f=1&nofb=1&ipt=16ec972fcac7651ae70ea7d21edc6d6ca9a6f9389ec6421de4c29fd2070e6881" alt="Wall-E">
 
+## Link to Presentation
+https://docs.google.com/presentation/d/1WxcQ-O2V-h0Iqa4nZXnhKlld5tAkQtXXnFIja4czPdY/edit
+
 ## Login Webpage
 - First, login to the website with the correct username and password.
 - If the user does not have a username or password, they need to sign up for a username and password
