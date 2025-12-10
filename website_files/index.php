@@ -25,7 +25,7 @@ if (!isset($_SESSION["logged"])) {
            h2 {
         	  font-size: 25px;
 			  text-align: left;
-		
+		      color: orange;
 			  font-weight: bold;
            }
            table, th, td{
